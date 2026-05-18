@@ -79,7 +79,8 @@ interface LLMConfig {
 
 export async function parseArticleWithLLM(
   content: string,
-  config: LLMConfig
+  config: LLMConfig,
+  originalUrl?: string
 ): Promise<MatchEvent[]> {
   const { apiKey, baseUrl = "https://api.openai.com/v1", model = "gpt-4o-mini" } = config;
 
@@ -143,7 +144,7 @@ export async function parseArticleWithLLM(
   return parsed.map((event, index) => ({
     ...event,
     id: `llm-${Date.now()}-${index}`,
-    original_url: "",
+    original_url: originalUrl || "",
     created_at: now,
   }));
 }

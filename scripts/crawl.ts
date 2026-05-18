@@ -65,15 +65,33 @@ function getLLMConfig() {
 
 // ---------- process single article ----------
 
-async function processArticle(content: string): Promise<MatchEvent[]> {
+async function processArticle(content: string, originalUrl?: string): Promise<MatchEvent[]> {
   const config = getLLMConfig();
   console.log(`🤖 正在调用 ${config.model} 解析推文...`);
-  const events = await parseArticleWithLLM(content, config);
+  const events = await parseArticleWithLLM(content, config, originalUrl);
   console.log(`📋 提取到 ${events.length} 条赛事`);
   return events;
 }
 
 // ---------- process file ----------
+
+function extractMeta(content: string): { url?: string; body: string } {
+  const lines = content.split("\n");
+  let url: string | undefined;
+  let bodyStart = 0;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith("# 链接:")) {
+      url = line.replace("# 链接:", "").trim();
+    }
+    if (line === "" && lines[i - 1]?.startsWith("#")) {
+      bodyStart = i + 1;
+    }
+  }
+
+  return { url, body: lines.slice(bodyStart).join("\n").trim() };
+}
 
 async function processFile(filePath: string): Promise<MatchEvent[]> {
   if (!fs.existsSync(filePath)) {
@@ -85,8 +103,10 @@ async function processFile(filePath: string): Promise<MatchEvent[]> {
     console.warn(`⚠️  文件为空: ${filePath}`);
     return [];
   }
-  console.log(`📄 读取文件: ${path.basename(filePath)} (${content.length} 字符)`);
-  return processArticle(content);
+  const { url, body } = extractMeta(content);
+  console.log(`📄 读取文件: ${path.basename(filePath)} (${body.length} 字符)`);
+  if (url) console.log(`   🔗 原文链接: ${url}`);
+  return processArticle(body, url);
 }
 
 // ---------- process directory ----------
