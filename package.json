@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "crawl": "npx tsx scripts/crawl.ts",
-    "fetch": "npx tsx scripts/fetch-wechat.ts"
+    "fetch": "npx tsx scripts/fetch-wechat.ts",
+    "resolve": "npx tsx scripts/resolve-sogou.ts"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -24,6 +25,9 @@
     "cheerio": "^1.2.0",
     "dotenv": "^17.4.2",
     "postcss": "^8.4.49",
+    "puppeteer-core": "^25.0.4",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.22.1",
     "typescript": "^5.7.3"

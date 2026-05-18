@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx tsx *)",
+      "Bash(curl --noproxy * -sS https://www.bing.com/search?q=%22%E6%B5%99%E5%A4%A7%E7%BE%BD%E5%8D%8F%E6%98%A5%E5%AD%A3%E6%9D%AF%22+site:mp.weixin.qq.com -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/131.0.0.0 Safari/537.36' -H 'Accept-Language: zh-CN,zh;q=0.9')",
+      "Bash(vercel --version)",
+      "Bash(gh --version)",
+      "Bash(npx vercel *)",
+      "Bash(git add *)",
+      "Bash(git init *)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl --noproxy * -sS 'https://weixin.sogou.com/weixin?type=2&query=%E6%B5%99%E5%A4%A7%E4%BD%93%E8%82%B2%E4%B8%8E%E8%89%BA%E6%9C%AF' -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/131.0.0.0 Safari/537.36' -H 'Accept-Language: zh-CN,zh;q=0.9')",
+      "Bash(node -e ' *)",
+      "Bash(npm install *)",
+      "Bash(curl --noproxy * -sS 'https://www.bing.com/search?q=%22%E8%BF%90%E5%8A%A8%E5%91%98%E4%BB%AC%E9%9B%86%E5%90%88%E5%95%A6%22+%22%E4%BD%93%E8%83%BD%E5%A4%A7%E8%B5%9B%22+%22%E6%B5%99%E5%A4%A7%22&first=1' -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/131.0.0.0 Safari/537.36' -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8' -H 'Accept: text/html,application/xhtml+xml')",
+      "Bash(curl --noproxy * -sS https://www.baidu.com/s?wd=%22%E6%B5%99%E5%A4%A7%E7%BE%BD%E5%8D%8F%E6%98%A5%E5%AD%A3%E6%9D%AF%22+site:mp.weixin.qq.com -H 'User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/131.0.0.0 Safari/537.36' -H 'Accept-Language: zh-CN,zh;q=0.9')",
+      "Bash(# Check if Chrome/Chromium is already available *)",
+      "Read(//Applications/Google Chrome.app/Contents/MacOS/**)"
+    ]
+  }
+}
