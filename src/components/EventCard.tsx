@@ -1,6 +1,6 @@
 import { MatchEvent, CATEGORY_LABELS, CAMPUS_LABELS, CATEGORY_COLORS } from "@/lib/types";
 import CountdownBadge from "./CountdownBadge";
-import { MapPin, Award, Calendar, User } from "lucide-react";
+import { MapPin, Award, Calendar, User, ExternalLink } from "lucide-react";
 
 export default function EventCard({ event }: { event: MatchEvent }) {
   return (
@@ -45,6 +45,18 @@ export default function EventCard({ event }: { event: MatchEvent }) {
           </span>
         )}
       </div>
+
+      {event.original_url && (
+        <a
+          href={event.original_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex items-center gap-1 text-xs text-zju-blue hover:underline"
+        >
+          <ExternalLink size={12} />
+          查看原文
+        </a>
+      )}
     </div>
   );
 }
