@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .tab-active {
+    @apply bg-zju-blue text-white shadow-md;
+  }
+  .tab-inactive {
+    @apply bg-white text-gray-600 hover:bg-zju-blue-bg hover:text-zju-blue transition-colors;
+  }
+}

@@ -1,0 +1,11 @@
+# ZJU Sports Hub — 文章链接列表
+# 每行一个 mp.weixin.qq.com 文章链接，# 开头为注释
+#
+# 使用方法：
+#   1. 在浏览器中打开 https://weixin.sogou.com
+#   2. 搜索公众号名称（如"浙大体育与艺术"）
+#   3. 复制文章链接粘贴到下方
+#   4. 运行: npm run fetch -- --urls urls.txt --parse
+#
+# 示例（以下链接为示意，需替换为真实链接）：
+
