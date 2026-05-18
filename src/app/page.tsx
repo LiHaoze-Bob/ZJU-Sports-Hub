@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { mockEvents } from "@/lib/mockData";
 import crawledEvents from "@/data/events.json";
 import { Category, Campus, MatchEvent } from "@/lib/types";
 import FilterBar from "@/components/FilterBar";
@@ -10,17 +9,11 @@ import EmptyState from "@/components/EmptyState";
 import DailyBriefing from "@/components/DailyBriefing";
 import { Trophy, Activity } from "lucide-react";
 
-function mergeEvents(mock: MatchEvent[], crawled: MatchEvent[]): MatchEvent[] {
-  const titles = new Set(mock.map((e) => e.title));
-  const newEvents = crawled.filter((e) => !titles.has(e.title));
-  return [...newEvents, ...mock];
-}
-
 export default function HomePage() {
   const [campus, setCampus] = useState<Campus | "all">("all");
   const [category, setCategory] = useState<Category | "all">("all");
 
-  const allEvents = useMemo(() => mergeEvents(mockEvents, crawledEvents as MatchEvent[]), []);
+  const allEvents = crawledEvents as MatchEvent[];
 
   const filtered = useMemo(() => {
     return allEvents
