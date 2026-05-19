@@ -153,34 +153,3 @@ export async function parseArticleWithLLM(
   }));
 }
 
-/**
- * Simulated parser for MVP demo — returns mock data.
- * Replace with real parseArticleWithLLM when you have an API key.
- */
-export async function processArticle(content: string): Promise<MatchEvent[]> {
-  // In MVP, simulate by returning a filtered subset of mock data
-  // that matches keywords found in the content.
-  const { mockEvents } = await import("./mockData");
-
-  const keywords = content.toLowerCase();
-  const matched = mockEvents.filter((e) => {
-    return (
-      keywords.includes(e.title.slice(0, 4)) ||
-      keywords.includes(e.category) ||
-      keywords.includes(e.campus)
-    );
-  });
-
-  // If no match, return first 2 as demo
-  if (matched.length === 0) {
-    return mockEvents.slice(0, 2).map((e) => ({
-      ...e,
-      id: `parsed-${Date.now()}-${e.id}`,
-    }));
-  }
-
-  return matched.map((e) => ({
-    ...e,
-    id: `parsed-${Date.now()}-${e.id}`,
-  }));
-}

@@ -6,8 +6,9 @@ import { Category, Campus, MatchEvent } from "@/lib/types";
 import FilterBar from "@/components/FilterBar";
 import EventCard from "@/components/EventCard";
 import EmptyState from "@/components/EmptyState";
-import DailyBriefing from "@/components/DailyBriefing";
 import { Trophy, Activity } from "lucide-react";
+
+const DAYS_BACK = 5;
 
 export default function HomePage() {
   const [campus, setCampus] = useState<Campus | "all">("all");
@@ -15,29 +16,33 @@ export default function HomePage() {
 
   const allEvents = crawledEvents as MatchEvent[];
 
+  const recentEvents = useMemo(() => {
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - DAYS_BACK);
+    cutoff.setHours(0, 0, 0, 0);
+    return allEvents.filter((e) => new Date(e.event_date) >= cutoff);
+  }, [allEvents]);
+
   const filtered = useMemo(() => {
-    return allEvents
+    return recentEvents
       .filter((e) => campus === "all" || e.campus === campus)
       .filter((e) => category === "all" || e.category === category)
       .sort(
         (a, b) =>
           new Date(a.deadline).getTime() - new Date(b.deadline).getTime()
       );
-  }, [campus, category, allEvents]);
+  }, [campus, category, recentEvents]);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-6">
       {/* Header */}
       <header className="mb-6">
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="flex items-center gap-2 text-xl font-bold text-zju-blue">
-              <Activity size={24} />
-              ZJU Sports Hub
-            </h1>
-            <p className="mt-0.5 text-sm text-gray-500">浙大体育赛事聚合平台</p>
-          </div>
-          <DailyBriefing events={filtered} />
+        <div>
+          <h1 className="flex items-center gap-2 text-xl font-bold text-zju-blue">
+            <Activity size={24} />
+            ZJU Sports Hub
+          </h1>
+          <p className="mt-0.5 text-sm text-gray-500">浙大体育赛事聚合平台 · 近{DAYS_BACK}天</p>
         </div>
       </header>
 
