@@ -9,7 +9,8 @@
     "lint": "next lint",
     "crawl": "npx tsx scripts/crawl.ts",
     "fetch": "npx tsx scripts/fetch-wechat.ts",
-    "resolve": "npx tsx scripts/resolve-sogou.ts"
+    "resolve": "npx tsx scripts/resolve-sogou.ts",
+    "discover": "npx tsx scripts/discover.ts"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
