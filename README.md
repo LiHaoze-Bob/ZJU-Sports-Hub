@@ -2,7 +2,7 @@
 
 为浙大学生聚合校内体育社团公众号发布的赛事信息，不错过每一场精彩比赛。
 
-> 实时站点: [zju-sports-hub.pages.dev](https://zju-sports-hub.pages.dev)（国内可访问）\| [sqtp.vercel.app](https://sqtp.vercel.app)
+> 实时站点: [zju-sports.pages.dev](https://zju-sports.pages.dev)（国内可访问）\| [sqtp.vercel.app](https://sqtp.vercel.app)
 
 ## 技术栈
 

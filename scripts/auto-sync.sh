@@ -47,7 +47,11 @@ npm run sync-rss -- --parse >> "$LOG_FILE" 2>&1 || {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] sync-rss 失败" >> "$LOG_FILE"
 }
 
-# ── Step 2: Push to GitHub ──
+# ── Step 2: Rebuild static site ──
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] 重新构建静态站点..." >> "$LOG_FILE"
+npm run build >> "$LOG_FILE" 2>&1
+
+# ── Step 3: Push to GitHub + Deploy to Cloudflare ──
 if git diff --quiet src/data/events.json; then
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] 无新赛事，跳过推送" >> "$LOG_FILE"
 else
@@ -55,7 +59,11 @@ else
   git add src/data/events.json urls.txt web.md articles/
   git commit -m "auto: sync events $(date '+%Y-%m-%d')" >> "$LOG_FILE" 2>&1
   git push origin main >> "$LOG_FILE" 2>&1
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 推送完成，Vercel 将自动部署" >> "$LOG_FILE"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] GitHub 推送完成" >> "$LOG_FILE"
+
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 部署到 Cloudflare Pages..." >> "$LOG_FILE"
+  npx wrangler pages deploy out --project-name=zju-sports --branch=main >> "$LOG_FILE" 2>&1
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] Cloudflare Pages 部署完成" >> "$LOG_FILE"
 fi
 
 # ── Step 3: Shutdown ──
