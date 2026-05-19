@@ -28,3 +28,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# auto-sync
+.auto-sync.log
+.chrome-profile/
+.we-mp-rss-data/
