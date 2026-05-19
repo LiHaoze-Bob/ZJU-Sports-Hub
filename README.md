@@ -47,10 +47,16 @@ npm run dev        # → http://localhost:3000
 
 ### 部署 we-mp-rss（微信 RSS 服务）
 
+首次创建：
 ```bash
 docker run -d --name we-mp-rss -p 8001:8001 \
-  -v ~/we-mp-rss-data:/app/data \
+  -v $(pwd)/.we-mp-rss-data:/app/data \
   ghcr.io/rachelos/we-mp-rss:latest
+```
+
+之后每次启动只需：
+```bash
+docker start we-mp-rss
 ```
 
 然后打开 `http://localhost:8001`，用默认账号登录后扫码授权微信。
