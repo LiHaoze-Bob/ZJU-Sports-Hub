@@ -41,7 +41,10 @@ function saveEvents(events: MatchEvent[]): void {
 
 function deduplicate(existing: MatchEvent[], incoming: MatchEvent[]): MatchEvent[] {
   const titles = new Set(existing.map((e) => e.title));
-  const newEvents = incoming.filter((e) => !titles.has(e.title));
+  const urls = new Set(existing.map((e) => e.original_url).filter(Boolean));
+  const newEvents = incoming.filter(
+    (e) => !titles.has(e.title) && !urls.has(e.original_url)
+  );
   if (newEvents.length < incoming.length) {
     console.log(`🔁 去重：跳过 ${incoming.length - newEvents.length} 条重复赛事`);
   }

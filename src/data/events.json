@@ -13,7 +13,7 @@
     "created_at": "2026-05-18T12:57:01.095Z"
   },
   {
-    "title": "夏季杯",
+    "title": "2025夏季杯",
     "category": "ball",
     "campus": "zijingang",
     "event_date": "2025-05-16",
@@ -24,19 +24,6 @@
     "id": "llm-1779109023123-0",
     "original_url": "https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g",
     "created_at": "2026-05-18T12:57:03.123Z"
-  },
-  {
-    "title": "浙江大学2026年“三好杯”第四届智力运动会棋类项目",
-    "category": "other",
-    "campus": "zijingang",
-    "event_date": "2026-05-23",
-    "deadline": "2026-05-21",
-    "location": "紫金港校区风雨操场西形体房",
-    "summary": "浙江大学2026年“三好杯”第四届智力运动会棋类项目，包括围棋、象棋、国际象棋，以学院为单位组队参赛，比赛时间为5月23日至24日，地点在紫金港校区风雨操场西形体房，报名截止5月21日。",
-    "is_official": true,
-    "id": "llm-1779162014766-0",
-    "original_url": "https://mp.weixin.qq.com/s/BAKCPP5I003EkZiVBTO1Mw",
-    "created_at": "2026-05-19T03:40:14.763Z"
   },
   {
     "title": "2026年浙江省大学生羽毛球锦标赛（甲丙组）",
@@ -76,19 +63,6 @@
     "id": "llm-1779162022911-0",
     "original_url": "https://mp.weixin.qq.com/s/jH3D5H_o-rgnswePsiFbKA",
     "created_at": "2026-05-19T03:40:22.911Z"
-  },
-  {
-    "title": "夏季杯乒乓球赛",
-    "category": "ball",
-    "campus": "zijingang",
-    "event_date": "2025-05-16",
-    "deadline": "2026-05-13",
-    "location": "浙江大学紫金港校区风雨操场",
-    "summary": "浙江大学学生乒乓球协会举办的“夏季杯”乒乓球赛，面向全校本科生、硕士生、博士生。比赛采用混合团体赛制，设混双、女单、男单、女双、男双五盘，小组赛加淘汰赛。报名上限32支队伍，参赛可获综素加分，前八名有二课加分。",
-    "is_official": true,
-    "id": "llm-1779162025287-0",
-    "original_url": "https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g",
-    "created_at": "2026-05-19T03:40:25.287Z"
   },
   {
     "title": "辅导站国球经典・一拍即合乒乓辅导站开课啦",
@@ -143,7 +117,7 @@
     "created_at": "2026-05-19T03:40:35.528Z"
   },
   {
-    "title": "浙大羽协春季杯",
+    "title": "浙大羽协2026春季杯",
     "category": "ball",
     "campus": "zijingang",
     "event_date": "2026-03-28",
@@ -208,7 +182,7 @@
     "created_at": "2026-05-19T03:40:47.617Z"
   },
   {
-    "title": "浙大羽协春季杯",
+    "title": "浙大羽协2025春季杯",
     "category": "ball",
     "campus": "zijingang",
     "event_date": "2025-03-28",
