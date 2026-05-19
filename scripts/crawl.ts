@@ -118,12 +118,19 @@ async function processFile(filePath: string): Promise<MatchEvent[]> {
   const content = fs.readFileSync(filePath, "utf-8").trim();
   if (!content) {
     console.warn(`⚠️  文件为空: ${filePath}`);
+    fs.unlinkSync(filePath);
     return [];
   }
   const { url, body } = extractMeta(content);
   console.log(`📄 读取文件: ${path.basename(filePath)} (${body.length} 字符)`);
   if (url) console.log(`   🔗 原文链接: ${url}`);
-  return processArticle(body, url);
+  const events = await processArticle(body, url);
+  // Delete non-sports articles to save disk space
+  if (events.length === 0) {
+    fs.unlinkSync(filePath);
+    console.log(`   🗑  非体育内容，已删除`);
+  }
+  return events;
 }
 
 // ---------- process directory ----------
