@@ -22,14 +22,46 @@ interface FeedInfo {
   name: string;
 }
 
-const FEEDS: FeedInfo[] = [
-  { id: "MP_WXS_3070994044", name: "浙大体育与艺术" },
-  { id: "MP_WXS_3564950020", name: "浙大乒协" },
-  { id: "MP_WXS_3286401661", name: "浙大羽协" },
-  { id: "MP_WXS_3010053825", name: "浙大足协" },
-  { id: "MP_WXS_3096293834", name: "浙大篮联" },
-  { id: "MP_WXS_3296204068", name: "浙大网协" },
-];
+/**
+ * Discover feeds dynamically by querying the we-mp-rss database.
+ * Falls back to a hardcoded list if the database is not accessible.
+ */
+function discoverFeeds(): FeedInfo[] {
+  try {
+    const { execSync } = require("node:child_process");
+    const output = execSync(
+      `docker exec we-mp-rss /app/env_x86_64/bin/python3 -c "
+import sqlite3
+conn = sqlite3.connect('/app/data/db.db')
+cur = conn.cursor()
+cur.execute('SELECT id, mp_name FROM feeds WHERE status=1')
+for r in cur.fetchall():
+    print(f'{r[0]}|{r[1]}')
+"`,
+      { encoding: "utf-8", timeout: 5000 }
+    );
+    return output
+      .trim()
+      .split("\n")
+      .filter(Boolean)
+      .map((line) => {
+        const [id, name] = line.split("|");
+        return { id, name };
+      });
+  } catch {
+    console.warn("⚠️  无法读取 we-mp-rss 数据库，使用默认 feed 列表");
+    return [
+      { id: "MP_WXS_3070994044", name: "浙大体育与艺术" },
+      { id: "MP_WXS_3564950020", name: "浙大乒协" },
+      { id: "MP_WXS_3286401661", name: "浙大羽协" },
+      { id: "MP_WXS_3010053825", name: "浙大足协" },
+      { id: "MP_WXS_3096293834", name: "浙大篮联" },
+      { id: "MP_WXS_3296204068", name: "浙大网协" },
+    ];
+  }
+}
+
+const FEEDS = discoverFeeds();
 
 function extractUrlsFromRSS(xml: string): string[] {
   const urls: string[] = [];
