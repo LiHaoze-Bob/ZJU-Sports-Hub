@@ -9,7 +9,7 @@
 - **前端**: Next.js 14 (App Router) + Tailwind CSS
 - **图标**: Lucide React
 - **数据采集**: we-mp-rss (Docker) → RSS → DeepSeek LLM 解析
-- **部署**: Vercel (自动部署，Git Push 即上线)
+- **部署**: Cloudflare Pages（国内可访问） + Vercel（备用），Git Push 双平台自动上线
 
 ## 数据流水线
 
@@ -21,41 +21,67 @@
 
 ## 快速开始
 
+只需 Node.js，无需 API Key 即可看到已有数据：
+
 ```bash
 npm install
-npm run dev        # 前端开发 → http://localhost:3000
+npm run dev        # → http://localhost:3000
 ```
 
-## 日常使用
+前端自动读取 `src/data/events.json`，包含已解析的赛事数据。
 
-### 首次配置
+## 完整部署（采集 + 解析 + 上线）
 
-1. 复制 `.env.local.example` 为 `.env.local`，填入 DeepSeek API Key
-2. 部署 we-mp-rss 并添加目标公众号（扫码授权）
-3. 运行首次同步：
+要接入新数据需要两部分：**数据管道**（本地 Mac）和 **前端托管**（Cloudflare/Vercel，自动部署）。
+
+### 准备工作
+
+1. **DeepSeek API Key**：注册 [DeepSeek](https://platform.deepseek.com) → 获取 API Key
+2. **创建 `.env.local`**：
+   ```env
+   LLM_API_KEY=sk-your-api-key
+   LLM_BASE_URL=https://api.deepseek.com/v1
+   LLM_MODEL=deepseek-chat
+   ```
+3. **Docker Desktop**：下载 [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### 部署 we-mp-rss（微信 RSS 服务）
 
 ```bash
-npm run sync-rss -- --parse
-git push
+docker run -d --name we-mp-rss -p 8001:8001 \
+  -v ~/we-mp-rss-data:/app/data \
+  ghcr.io/rachelos/we-mp-rss:latest
+```
+
+然后打开 `http://localhost:8001`，用默认账号登录后扫码授权微信。
+
+### 添加公众号
+
+在 we-mp-rss 网页界面中添加公众号：
+
+1. 点击「添加订阅」→ 搜索公众号名称
+2. 添加目标公众号（如「浙大乒协」）
+3. 等待自动同步（或点「同步」按钮手动触发）
+
+> 注意：扫码授权需要有一个微信公众平台账号（免费注册即可）。如果没有，可以手动往 `urls.txt` 粘贴微信文章链接，也能走通后续流程。
+
+### 初始化数据
+
+```bash
+npm run sync-rss -- --parse   # RSS → 抓取 → LLM 解析 → 入库
+git push                       # 触发 Cloudflare + Vercel 自动部署
 ```
 
 ### 自动同步（每 2 天）
 
-定时任务已通过 launchd 配置，自动流程：
+定时任务已通过 macOS launchd 配置：
 
-1. 启动 Docker → we-mp-rss 同步微信
+1. 自动启动 Docker → we-mp-rss 同步微信
 2. 提取 RSS → 抓取文章 → LLM 解析 → 更新 events.json
-3. git push → Vercel 自动部署
+3. git push → 双平台自动部署
 4. 关闭 Docker 释放资源
 
 查看日志：`cat .auto-sync.log`
-
-### 手动触发
-
-```bash
-npm run sync-rss -- --parse   # RSS → fetch → LLM 解析
-git push                       # 推送 → Vercel 部署
-```
 
 ## 项目结构
 
@@ -63,8 +89,7 @@ git push                       # 推送 → Vercel 部署
 src/
 ├── app/
 │   ├── layout.tsx              # 根布局
-│   ├── page.tsx                # 主页（仅展示近5天赛事）
-│   └── api/parse-article/      # LLM 解析 API
+│   └── page.tsx                # 主页（仅展示近5天赛事）
 ├── components/
 │   ├── EventCard.tsx           # 赛事卡片
 │   ├── FilterBar.tsx           # 校区/类别筛选
