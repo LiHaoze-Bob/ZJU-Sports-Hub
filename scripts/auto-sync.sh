@@ -2,7 +2,8 @@
 # ZJU Sports Hub — 自动同步脚本
 # 由 launchd 定时触发，每 2 天运行一次
 #
-# 流程: 启动 Docker → 等待 RSS 同步 → 拉取解析 → 推送部署 → 关闭 Docker
+# 流程: 确保 Docker 运行 → 拉取 RSS → 解析入库 → 推送 GitHub + Cloudflare
+# we-mp-rss 持续运行在后台，自动同步微信新文章
 
 set -e
 cd /Users/bob.li/Code/SQTP
@@ -37,9 +38,8 @@ if ! docker ps --filter name=we-mp-rss --format '{{.ID}}' | grep -q .; then
 fi
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] we-mp-rss 已运行" >> "$LOG_FILE"
 
-# Wait for we-mp-rss to sync new articles from WeChat
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 等待 we-mp-rss 同步微信数据 (90s)..." >> "$LOG_FILE"
-sleep 90
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] 等待同步完成 (30s)..." >> "$LOG_FILE"
+sleep 30
 
 # ── Step 1: Sync from RSS ──
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] 拉取 RSS..." >> "$LOG_FILE"
@@ -66,11 +66,5 @@ else
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] Cloudflare Pages 部署完成" >> "$LOG_FILE"
 fi
 
-# ── Step 3: Shutdown ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 停止 we-mp-rss 容器..." >> "$LOG_FILE"
-docker stop we-mp-rss >> "$LOG_FILE" 2>&1 || true
-# Optionally stop Docker Desktop to free resources
-# Uncomment the next line to fully quit Docker after sync:
-# osascript -e 'quit app "Docker"' 2>/dev/null || true
-
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 同步完成" >> "$LOG_FILE"
+# ── Done ──
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] 同步完成（we-mp-rss 保持运行，持续监控新文章）" >> "$LOG_FILE"
