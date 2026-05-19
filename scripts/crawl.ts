@@ -39,6 +39,8 @@ function saveEvents(events: MatchEvent[]): void {
   console.log(`✅ 已保存 ${events.length} 条赛事到 ${DATA_FILE}`);
 }
 
+const EXPIRE_DAYS = 5;
+
 function deduplicate(existing: MatchEvent[], incoming: MatchEvent[]): MatchEvent[] {
   const titles = new Set(existing.map((e) => e.title));
   const urls = new Set(existing.map((e) => e.original_url).filter(Boolean));
@@ -49,6 +51,18 @@ function deduplicate(existing: MatchEvent[], incoming: MatchEvent[]): MatchEvent
     console.log(`🔁 去重：跳过 ${incoming.length - newEvents.length} 条重复赛事`);
   }
   return [...existing, ...newEvents];
+}
+
+function removeExpired(events: MatchEvent[]): MatchEvent[] {
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - EXPIRE_DAYS);
+  cutoff.setHours(0, 0, 0, 0);
+  const valid = events.filter((e) => new Date(e.event_date) >= cutoff);
+  const removed = events.length - valid.length;
+  if (removed > 0) {
+    console.log(`🗑  过期清理：移除 ${removed} 条超过${EXPIRE_DAYS}天的赛事`);
+  }
+  return valid;
 }
 
 // ---------- LLM config ----------
@@ -194,10 +208,11 @@ ZJU Sports Hub — 推文解析脚本
     return;
   }
 
-  // Merge with existing, deduplicate, save
+  // Merge with existing, deduplicate, remove expired, save
   const existing = loadExistingEvents();
   const merged = deduplicate(existing, incoming);
-  saveEvents(merged);
+  const fresh = removeExpired(merged);
+  saveEvents(fresh);
 
   // Print summary
   console.log("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
