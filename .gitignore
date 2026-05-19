@@ -33,3 +33,6 @@ next-env.d.ts
 .auto-sync.log
 .chrome-profile/
 .we-mp-rss-data/
+
+# cloudflare
+out/
