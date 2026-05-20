@@ -65,7 +65,15 @@
       "Bash(chmod +x /Users/bob.li/Code/SQTP/scripts/auto-sync.sh)",
       "Bash(launchctl load *)",
       "Bash(launchctl list *)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(npx wrangler *)",
+      "Bash(npm uninstall *)",
+      "Bash(npx @opennextjs/cloudflare --help)",
+      "Bash(git reset *)",
+      "Bash(ALL_PROXY= http_proxy= https_proxy= git push origin main)",
+      "Bash(launchctl unload *)",
+      "Bash(python3 -c \"import sys,json; mounts=json.load\\(sys.stdin\\)[0]['Mounts']; [print\\(m['Source'],'→',m['Destination']\\) for m in mounts]\")",
+      "Bash(ALL_PROXY= http_proxy= https_proxy= /usr/bin/curl -sI https://zju-sports.pages.dev)"
     ],
     "additionalDirectories": [
       "/Users/bob.li/Library/LaunchAgents"

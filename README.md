@@ -78,7 +78,7 @@ npm run sync-rss -- --parse   # RSS → 抓取 → LLM 解析 → 入库
 git push                       # 触发 Cloudflare + Vercel 自动部署
 ```
 
-### 自动同步（每 2 天）
+### 自动同步
 
 定时任务已通过 macOS launchd 配置：
 
@@ -86,6 +86,11 @@ git push                       # 触发 Cloudflare + Vercel 自动部署
 2. 提取 RSS → 抓取文章 → LLM 解析 → 更新 events.json
 3. git push → 双平台自动部署
 4. 关闭 Docker 释放资源
+
+**手动更新只需**
+```bash
+bash /Users/bob.li/Code/ZJU-Sports-Hub/scripts/auto-sync.sh
+```
 
 查看日志：`cat .auto-sync.log`
 

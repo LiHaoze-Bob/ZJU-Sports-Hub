@@ -6,12 +6,12 @@
 #       → 构建静态站 → 推送 GitHub + Cloudflare → 关闭 Docker
 
 set -e
-cd /Users/bob.li/Code/SQTP
+cd /Users/bob.li/Code/ZJU-Sports-Hub
 export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-LOG_FILE="/Users/bob.li/Code/SQTP/.auto-sync.log"
+LOG_FILE="/Users/bob.li/Code/ZJU-Sports-Hub/.auto-sync.log"
 echo "" >> "$LOG_FILE"
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] ═══ 开始自动同步 ═══" >> "$LOG_FILE"
 
