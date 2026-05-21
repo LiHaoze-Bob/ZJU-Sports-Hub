@@ -8,6 +8,7 @@
 set -e
 cd /Users/bob.li/Code/ZJU-Sports-Hub
 export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH"
+export NO_PROXY=localhost,127.0.0.1
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
