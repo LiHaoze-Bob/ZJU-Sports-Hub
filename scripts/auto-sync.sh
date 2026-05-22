@@ -71,3 +71,6 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] 停止 we-mp-rss 容器..." >> "$LOG_FILE"
 docker stop we-mp-rss >> "$LOG_FILE" 2>&1 || true
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] 同步完成" >> "$LOG_FILE"
+
+# 自动打开日志
+open "$LOG_FILE" 2>/dev/null || true
