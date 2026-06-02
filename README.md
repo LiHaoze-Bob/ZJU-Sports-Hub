@@ -2,7 +2,7 @@
 
 为浙大学生聚合校内体育社团公众号发布的赛事信息，不错过每一场精彩比赛。
 
-> 实时站点: [zju-sports.pages.dev](https://zju-sports.pages.dev)（国内可访问）\| [sqtp.vercel.app](https://sqtp.vercel.app)
+> 实时站点: [zju-sports.pages.dev](https://zju-sports.pages.dev)（国内可访问）| [sqtp.vercel.app](https://sqtp.vercel.app)
 
 ## 技术栈
 
@@ -16,8 +16,10 @@
 ```
 微信公众平台 ──▶ we-mp-rss (Docker) ──▶ RSS feeds ──▶ sync-rss.ts ──▶
                                                                       │
-  urls.txt ──▶ fetch-wechat.ts ──▶ LLM 解析 ──▶ events.json ──▶ Vercel 前端
+  urls.txt ──▶ fetch-wechat.ts ──▶ LLM 解析 ──▶ events.json ──▶ 前端
 ```
+
+每天 9:30 全自动运行：`git pull → 抓取文章 → RSS 同步 → LLM 解析 → 清理过期 → 构建 → 部署`
 
 ## 快速开始
 
@@ -47,29 +49,29 @@ npm run dev        # → http://localhost:3000
 
 ### 部署 we-mp-rss（微信 RSS 服务）
 
-首次创建：
 ```bash
 docker run -d --name we-mp-rss -p 8001:8001 \
+  -e WE_RSS.AUTH=True \
+  -e DEBUG=True \
   -v $(pwd)/.we-mp-rss-data:/app/data \
   ghcr.io/rachelos/we-mp-rss:latest
 ```
 
-之后每次启动只需：
-```bash
-docker start we-mp-rss
-```
+然后打开 `http://localhost:8001`：
+1. 用默认账号 `admin` / `admin123` 登录
+2. 扫码授权微信公众平台
+3. 添加公众号（搜索名称 → 添加订阅）
 
-然后打开 `http://localhost:8001`，用默认账号登录后扫码授权微信。
-
-### 添加公众号
-
-在 we-mp-rss 网页界面中添加公众号：
-
-1. 点击「添加订阅」→ 搜索公众号名称
-2. 添加目标公众号（如「浙大乒协」）
-3. 等待自动同步（或点「同步」按钮手动触发）
-
-> 注意：扫码授权需要有一个微信公众平台账号（免费注册即可）。如果没有，可以手动往 `urls.txt` 粘贴微信文章链接，也能走通后续流程。
+> `WE_RSS.AUTH=True` 会在后台每 10 分钟自动续期微信登录态，避免过期。
+>
+> 如果忘记密码，可以重置：
+> ```bash
+> docker exec we-mp-rss /app/env_x86_64/bin/python3 -c "
+> import bcrypt, sqlite3
+> h = bcrypt.hashpw('admin123'.encode(), bcrypt.gensalt()).decode()
+> sqlite3.connect('/app/data/db.db').execute('UPDATE users SET password_hash=? WHERE username=?', (h, 'admin'))
+> "
+> ```
 
 ### 初始化数据
 
@@ -80,19 +82,37 @@ git push                       # 触发 Cloudflare + Vercel 自动部署
 
 ### 自动同步
 
-定时任务已通过 macOS launchd 配置：
+定时任务通过 macOS launchd 配置，每天 **9:30 AM** 运行：
 
-1. 自动启动 Docker → we-mp-rss 同步微信
-2. 提取 RSS → 抓取文章 → LLM 解析 → 更新 events.json
-3. git push → 双平台自动部署
-4. 关闭 Docker 释放资源
-
-**手动更新只需**
 ```bash
 bash /Users/bob.li/Code/ZJU-Sports-Hub/scripts/auto-sync.sh
 ```
 
-查看日志：`cat .auto-sync.log`
+**脚本流程**：
+
+| 步骤 | 操作 | 说明 |
+|------|------|------|
+| 0 | `git pull --rebase` | 拉取最新代码，避免冲突 |
+| 1 | 启动/检查 we-mp-rss | 确保容器运行，等待服务就绪 |
+| 2 | `fetch_all_article()` | 从微信抓取新文章 |
+| 3 | `sync-rss --parse` | RSS → 下载 → LLM 解析 → 入库 |
+| 4 | 清理过期 | 删除 7 天前的 `.txt` 文件 |
+| 5 | `next build` | 构建静态站点 |
+| 6 | git push + deploy | 仅有赛事变更时才推送 |
+| 7 | Docker 清理 | 每周日自动 `docker system prune` |
+
+**特性**：
+- 容器 **持续运行**，保持微信登录态，cron 每 59 分钟自动检查新文章
+- **有变化才 push**，不会产生空提交
+- 每周日自动清理 Docker 磁盘占用
+- 详细日志写入 `.auto-sync-detail.log`，主日志 `.auto-sync.log` 保持简洁
+
+**日志**：
+
+```bash
+tail -f .auto-sync.log          # 实时查看
+tail -f .auto-sync-detail.log   # 详细输出（npm/build/docker 完整日志）
+```
 
 ## 项目结构
 
@@ -115,7 +135,7 @@ src/
 scripts/
 ├── auto-sync.sh                # 定时任务脚本
 ├── fetch-wechat.ts             # 微信推文抓取
-├── crawl.ts                    # LLM 解析
+├── crawl.ts                    # LLM 解析（含去重 + 过期清理）
 └── sync-rss.ts                 # RSS → URLs 提取
 ```
 
@@ -135,7 +155,6 @@ scripts/
 | summary | string | 赛事简介 |
 | is_official | boolean | 是否含二课/综素 |
 
-
 ## 已支持的公众号
 
 | 公众号 | 覆盖内容 | 校区 |
@@ -149,12 +168,14 @@ scripts/
 | 浙大台协 | 台球积分赛、六球大奖赛 | 紫金港 |
 | 浙江大学排球社 | 排球赛、球势杯 | 紫金港 |
 
-> 数据来源：以上公众号公开发布的推文，通过 [we-mp-rss](https://github.com/rachelos/we-mp-rss) 转换为 RSS 订阅源。感谢 we-mp-rss 项目提供的灵感与技术方案。
+> 数据来源：以上公众号公开发布的推文，通过 [we-mp-rss](https://github.com/rachelos/we-mp-rss) 转换为 RSS 订阅源。
 
 ## 展望
 
 - [x] 同步时自动清理超过 5 天的过期赛事
 - [x] 支持动态发现新公众号（RSS 自动识别）
+- [x] 每日全自动同步 + 部署流水线
+- [x] Docker 容器持续运行，自动续期微信登录
 - [ ] 每日微信/钉钉推送新赛事摘要
 - [ ] 接入更多浙大校内体育公众号
 - [ ] 支持更多校区（玉泉、西溪、舟山、海宁）

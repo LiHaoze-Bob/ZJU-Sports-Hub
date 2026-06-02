@@ -93,7 +93,7 @@ async function syncFeeds(autoParse: boolean) {
 
   for (const feed of FEEDS) {
     try {
-      const response = await fetch(`${RSS_BASE}/${feed.id}`);
+      const response = await fetch(`${RSS_BASE}/${feed.id}?limit=100`);
       if (!response.ok) {
         console.log(`   ⚠️  ${feed.name}: HTTP ${response.status}`);
         continue;

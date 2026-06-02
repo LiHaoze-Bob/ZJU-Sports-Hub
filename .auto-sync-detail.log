@@ -1,0 +1,3280 @@
+[2026-05-19 11:48:59] 开始自动同步...
+[2026-05-19 11:48:59] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (6 个公众号)...
+
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大乒协: 5 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+
+⏳ 暂无新文章 (已拉取 40 篇，均为已收录)
+[2026-05-19 11:49:01] 无新赛事，跳过推送
+[2026-05-19 11:49:01] 同步完成
+
+[2026-05-19 19:18:58] ═══ 开始自动同步 ═══
+[2026-05-19 19:18:58] 启动 Docker...
+[2026-05-19 19:19:14] Docker 已就绪
+[2026-05-19 19:19:15] 启动现有 we-mp-rss 容器...
+we-mp-rss
+[2026-05-19 19:19:16] we-mp-rss 已运行
+[2026-05-19 19:19:16] 等待同步完成 (30s)...
+[2026-05-19 19:19:46] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (6 个公众号)...
+
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大乒协: 5 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+
+⏳ 暂无新文章 (已拉取 40 篇，均为已收录)
+[2026-05-19 19:19:47] 重新构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    7.03 kB        94.4 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-19 19:20:05] 无新赛事，跳过推送
+[2026-05-19 19:20:05] 同步完成（we-mp-rss 保持运行，持续监控新文章）
+
+[2026-05-19 19:22:16] ═══ 开始自动同步 ═══
+[2026-05-19 19:22:16] 启动 Docker...
+[2026-05-19 19:22:17] Docker 已就绪
+[2026-05-19 19:22:18] 等待 we-mp-rss 自动同步文章...
+[2026-05-19 19:24:18] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (6 个公众号)...
+
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大乒协: 5 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+
+⏳ 暂无新文章 (已拉取 40 篇，均为已收录)
+[2026-05-19 19:24:19] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    7.03 kB        94.4 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-19 19:24:34] 无新赛事，跳过部署
+[2026-05-19 19:24:34] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-19 19:24:35] 同步完成
+
+[2026-05-20 20:54:50] ═══ 开始自动同步 ═══
+[2026-05-20 20:54:50] 启动 Docker...
+[2026-05-20 20:54:51] Docker 已就绪
+[2026-05-20 20:54:51] 等待 we-mp-rss 自动同步文章...
+[2026-05-20 20:56:51] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (0 个公众号)...
+
+
+⏳ 暂无新文章 (已拉取 0 篇，均为已收录)
+   we-mp-rss 可能还在同步中，请稍后重试。
+[2026-05-20 20:56:52] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-20 20:57:09] 无新赛事，跳过部署
+[2026-05-20 20:57:09] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-20 20:57:10] 同步完成
+
+[2026-05-21 09:30:00] ═══ 开始自动同步 ═══
+[2026-05-21 09:30:00] 启动 Docker...
+[2026-05-21 09:30:11] Docker 已就绪
+[2026-05-21 09:30:12] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-21 09:30:13] 等待 we-mp-rss 自动同步文章...
+[2026-05-21 09:32:13] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (0 个公众号)...
+
+
+⏳ 暂无新文章 (已拉取 0 篇，均为已收录)
+   we-mp-rss 可能还在同步中，请稍后重试。
+[2026-05-21 09:32:17] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-21 09:32:35] 无新赛事，跳过部署
+[2026-05-21 09:32:35] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-21 09:32:36] 同步完成
+
+[2026-05-22 09:43:39] ═══ 开始自动同步 ═══
+[2026-05-22 09:43:39] 启动 Docker...
+[2026-05-22 09:44:02] Docker 已就绪
+[2026-05-22 09:44:03] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-22 09:44:03] 等待 we-mp-rss 自动同步文章...
+[2026-05-22 10:09:48] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-22 10:09:50] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-22 10:10:10] 无新赛事，跳过部署
+[2026-05-22 10:10:10] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-22 10:10:12] 同步完成
+
+[2026-05-23 09:47:59] ═══ 开始自动同步 ═══
+[2026-05-23 09:47:59] 启动 Docker...
+[2026-05-23 09:48:11] Docker 已就绪
+[2026-05-23 09:48:11] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-23 09:48:12] 等待 we-mp-rss 自动同步文章...
+[2026-05-23 09:53:58] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-23 09:54:00] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-23 09:54:17] 无新赛事，跳过部署
+[2026-05-23 09:54:17] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-23 09:54:18] 同步完成
+
+[2026-05-25 09:39:45] ═══ 开始自动同步 ═══
+[2026-05-25 09:39:45] 启动 Docker...
+[2026-05-25 09:40:18] Docker 已就绪
+[2026-05-25 09:40:41] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-25 09:40:42] 等待 we-mp-rss 自动同步文章...
+[2026-05-25 09:54:11] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-25 09:54:18] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-25 09:54:51] 无新赛事，跳过部署
+[2026-05-25 09:54:51] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-25 09:54:52] 同步完成
+
+[2026-05-27 09:59:50] ═══ 开始自动同步 ═══
+[2026-05-27 09:59:50] 启动 Docker...
+[2026-05-27 10:00:02] Docker 已就绪
+[2026-05-27 10:00:03] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-27 10:00:03] 等待 we-mp-rss 自动同步文章...
+[2026-05-27 10:27:16] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-27 10:27:31] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+ ⚠ Sending SIGTERM signal to Next.js build worker due to timeout of 60 seconds. Subsequent errors may be a result of the worker exiting.
+ ⚠ Sending SIGTERM signal to Next.js build worker due to timeout of 60 seconds. Subsequent errors may be a result of the worker exiting.
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⚠ Restarted static page generation for /404 because it took more than 60 seconds
+ ⚠ See more info here https://nextjs.org/docs/messages/static-page-generation-timeout
+ ⚠ Restarted static page generation for /404.html because it took more than 60 seconds
+ ⨯ Next.js build worker exited with code: null and signal: SIGTERM
+ ⚠ Restarted static page generation for /_not-found because it took more than 60 seconds
+ ⚠ See more info here https://nextjs.org/docs/messages/static-page-generation-timeout
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-27 10:40:54] 无新赛事，跳过部署
+[2026-05-27 10:40:54] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-27 10:40:55] 同步完成
+
+[2026-05-28 09:30:05] ═══ 开始自动同步 ═══
+[2026-05-28 09:30:05] 启动 Docker...
+[2026-05-28 09:30:16] Docker 已就绪
+[2026-05-28 09:30:17] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-28 09:30:18] 等待 we-mp-rss 自动同步文章...
+[2026-05-28 09:32:18] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-28 09:32:22] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-28 09:32:44] 无新赛事，跳过部署
+[2026-05-28 09:32:44] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-28 09:32:46] 同步完成
+
+[2026-05-29 09:34:58] ═══ 开始自动同步 ═══
+[2026-05-29 09:34:58] 启动 Docker...
+[2026-05-29 09:35:15] Docker 已就绪
+[2026-05-29 09:35:15] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-29 09:35:16] 等待 we-mp-rss 自动同步文章...
+[2026-05-29 09:52:03] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-29 09:52:06] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-29 10:08:16] 无新赛事，跳过部署
+[2026-05-29 10:08:16] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-29 10:08:17] 同步完成
+
+[2026-05-30 09:51:33] ═══ 开始自动同步 ═══
+[2026-05-30 09:51:33] 启动 Docker...
+[2026-05-30 09:51:45] Docker 已就绪
+[2026-05-30 09:51:48] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-30 09:51:52] 等待 we-mp-rss 自动同步文章...
+[2026-05-30 10:52:41] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-30 10:52:44] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-30 10:52:58] 无新赛事，跳过部署
+[2026-05-30 10:52:58] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-30 10:52:59] 同步完成
+
+[2026-05-31 09:37:08] ═══ 开始自动同步 ═══
+[2026-05-31 09:37:08] 启动 Docker...
+[2026-05-31 09:37:23] Docker 已就绪
+[2026-05-31 09:37:24] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-05-31 09:37:25] 等待 we-mp-rss 自动同步文章...
+[2026-05-31 09:39:25] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-05-31 09:39:28] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-05-31 09:39:43] 无新赛事，跳过部署
+[2026-05-31 09:39:43] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-05-31 09:39:45] 同步完成
+
+[2026-06-01 10:45:26] ═══ 开始自动同步 ═══
+[2026-06-01 10:45:26] 启动 Docker...
+[2026-06-01 10:45:30] Docker 已就绪
+[2026-06-01 10:45:38] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-06-01 10:45:38] 等待 we-mp-rss 自动同步文章...
+[2026-06-01 10:47:38] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-06-01 10:47:41] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-06-01 10:48:07] 无新赛事，跳过部署
+[2026-06-01 10:48:07] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-06-01 10:48:09] 同步完成
+
+[2026-06-02 09:55:06] ═══ 开始自动同步 ═══
+[2026-06-02 09:55:06] 启动 Docker...
+[2026-06-02 09:55:38] Docker 已就绪
+[2026-06-02 09:55:54] 启动 we-mp-rss 容器...
+we-mp-rss
+[2026-06-02 09:56:08] 等待 we-mp-rss 自动同步文章...
+[2026-06-02 10:12:32] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-06-02 10:12:35] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-06-02 10:12:49] 无新赛事，跳过部署
+[2026-06-02 10:12:49] 停止 we-mp-rss 容器...
+we-mp-rss
+[2026-06-02 10:12:51] 同步完成
+
+[2026-06-02 10:35:14] ═══ 开始自动同步 ═══
+[2026-06-02 10:35:14] 确保 Docker 运行...
+[2026-06-02 10:35:15] Docker 已就绪
+[2026-06-02 10:35:15] we-mp-rss 已在运行
+[2026-06-02 10:35:15] 等待 we-mp-rss 服务就绪...
+[2026-06-02 10:35:15] we-mp-rss 服务已就绪
+[2026-06-02 10:35:15] 触发公众号文章抓取...
+Failed to fetch latest version: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/rachelos/we-mp-rss/releases/latest
+名称:we-mp-rss
+版本:1.5.2 API_BASE:/api/v1/wx
+[默认]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+Redis连接成功
+[文章采集API]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+生成桌面端 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:119.0) Gecko/20100101 Firefox/119.0
+[任务调度]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+TaskQueueManager initialized, instance id: 140390909427792, tag: 文章采集
+TaskQueue singleton created, instance id: 140390909427792
+队列任务后台运行, instance id: 140390909427792
+TaskQueueManager initialized, instance id: 140390918005904, tag: 内容补抓
+ContentTaskQueue singleton created, instance id: 140390918005904
+队列任务后台运行, instance id: 140390918005904
+Queue Redis 连接成功
+/etc/timezone is deprecated in some distros, and no longer reliable. tzlocal is ignoring it, and you can likely delete it.
+开始更新
+采集模式:web
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3564950020', 1, 0)
+更新公众号MP_WXS_3564950020的sync_time为1780367716
+更新公众号MP_WXS_3564950020的updated_at为2026-06-02 10:35:16.890752
+更新公众号MP_WXS_3564950020的update_time为1780367716
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367716, 1780367716, '2026-06-02 10:35:16.890752', 'MP_WXS_3564950020')
+Web浏览器模式,是否采集[浙大乒协]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 7.13秒
+item end
+浙大乒协 处理完成等待6秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3070994044',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3070994044', 1, 0)
+更新公众号MP_WXS_3070994044的sync_time为1780367730
+更新公众号MP_WXS_3070994044的updated_at为2026-06-02 10:35:30.048480
+更新公众号MP_WXS_3070994044的update_time为1780367730
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367730, 1780367730, '2026-06-02 10:35:30.048480', 'MP_WXS_3070994044')
+Web浏览器模式,是否采集[浙大体育与艺术]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 1.07秒
+item end
+浙大体育与艺术 处理完成等待5秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3286401661',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3286401661', 1, 0)
+更新公众号MP_WXS_3286401661的sync_time为1780367736
+更新公众号MP_WXS_3286401661的updated_at为2026-06-02 10:35:36.143648
+更新公众号MP_WXS_3286401661的update_time为1780367736
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367736, 1780367736, '2026-06-02 10:35:36.143648', 'MP_WXS_3286401661')
+Web浏览器模式,是否采集[浙大羽协]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 8.08秒
+item end
+浙大羽协 处理完成等待10秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3010053825',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3010053825', 1, 0)
+更新公众号MP_WXS_3010053825的sync_time为1780367754
+更新公众号MP_WXS_3010053825的updated_at为2026-06-02 10:35:54.245845
+更新公众号MP_WXS_3010053825的update_time为1780367754
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367754, 1780367754, '2026-06-02 10:35:54.245845', 'MP_WXS_3010053825')
+Web浏览器模式,是否采集[浙大足协]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 6.06秒
+item end
+浙大足协 处理完成等待4秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3096293834',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3096293834', 1, 0)
+更新公众号MP_WXS_3096293834的sync_time为1780367764
+更新公众号MP_WXS_3096293834的updated_at为2026-06-02 10:36:04.348892
+更新公众号MP_WXS_3096293834的update_time为1780367764
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367764, 1780367764, '2026-06-02 10:36:04.348892', 'MP_WXS_3096293834')
+Web浏览器模式,是否采集[浙大篮联]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 2.07秒
+item end
+浙大篮联 处理完成等待4秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3296204068',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3296204068', 1, 0)
+更新公众号MP_WXS_3296204068的sync_time为1780367770
+更新公众号MP_WXS_3296204068的updated_at为2026-06-02 10:36:10.447284
+更新公众号MP_WXS_3296204068的update_time为1780367770
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367770, 1780367770, '2026-06-02 10:36:10.447284', 'MP_WXS_3296204068')
+Web浏览器模式,是否采集[浙大网协]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 0.07秒
+item end
+浙大网协 处理完成等待5秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3092253581',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3092253581', 1, 0)
+更新公众号MP_WXS_3092253581的sync_time为1780367775
+更新公众号MP_WXS_3092253581的updated_at为2026-06-02 10:36:15.544628
+更新公众号MP_WXS_3092253581的update_time为1780367775
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367775, 1780367775, '2026-06-02 10:36:15.544628', 'MP_WXS_3092253581')
+Web浏览器模式,是否采集[浙大台协]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 1.07秒
+item end
+浙大台协 处理完成等待5秒后继续...
+Invalid Session, stop at 0
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+[参数] ('MP_WXS_3094010100',)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3094010100', 1, 0)
+更新公众号MP_WXS_3094010100的sync_time为1780367781
+更新公众号MP_WXS_3094010100的updated_at为2026-06-02 10:36:21.633232
+更新公众号MP_WXS_3094010100的update_time为1780367781
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780367781, 1780367781, '2026-06-02 10:36:21.633232', 'MP_WXS_3094010100')
+Web浏览器模式,是否采集[浙江大学排球社]内容：False
+
+第1页开始爬取
+
+成功0条
+执行耗时: 0.07秒
+item end
+浙江大学排球社 处理完成等待10秒后继续...
+Invalid Session, stop at 0
+[]
+2026-06-02 10:36:31 - INFO - 所有公众号更新完成,共更新0条数据
+[2026-06-02 10:36:31] 文章抓取完成
+[2026-06-02 10:36:31] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 5 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 60 篇，均为已收录)
+[2026-06-02 10:36:34] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    8.38 kB        95.7 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-06-02 10:36:49] 无新赛事，跳过部署
+[2026-06-02 10:36:49] 保持 we-mp-rss 运行，持续监控新文章
+[2026-06-02 10:36:49] 同步完成
+
+[2026-06-02 11:01:29] ═══ 开始自动同步 ═══
+[2026-06-02 11:01:29] Git pull...
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[2026-06-02 11:01:29] ⚠️ Git pull 失败，继续同步...
+[2026-06-02 11:01:29] 确保 Docker 运行...
+[2026-06-02 11:01:32] Docker 已就绪
+[2026-06-02 11:01:32] we-mp-rss 已在运行
+[2026-06-02 11:01:32] 等待 we-mp-rss 服务就绪...
+[2026-06-02 11:01:32] we-mp-rss 服务已就绪
+[2026-06-02 11:01:32] 触发公众号文章抓取...
+Failed to fetch latest version: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/rachelos/we-mp-rss/releases/latest
+名称:we-mp-rss
+版本:1.5.2 API_BASE:/api/v1/wx
+[默认]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+Redis连接成功
+[文章采集API]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+生成桌面端 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5827.95 Safari/537.36 Edg/116.1.2202.7
+[任务调度]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+TaskQueueManager initialized, instance id: 140031401885184, tag: 文章采集
+TaskQueue singleton created, instance id: 140031401885184
+队列任务后台运行, instance id: 140031401885184
+TaskQueueManager initialized, instance id: 140031402190288, tag: 内容补抓
+ContentTaskQueue singleton created, instance id: 140031402190288
+队列任务后台运行, instance id: 140031402190288
+/etc/timezone is deprecated in some distros, and no longer reliable. tzlocal is ignoring it, and you can likely delete it.
+开始更新
+Queue Redis 连接成功
+采集模式:web
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.status = ?
+[参数] (1,)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3564950020', 1, 0)
+更新公众号MP_WXS_3564950020的sync_time为1780369294
+更新公众号MP_WXS_3564950020的updated_at为2026-06-02 11:01:34.391246
+更新公众号MP_WXS_3564950020的update_time为1780369294
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369294, 1780369294, '2026-06-02 11:01:34.391246', 'MP_WXS_3564950020')
+Web浏览器模式,是否采集[浙大乒协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/f8ylDO-HgwZVbGGqdG3xyg', '3564950020-2247486746_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g', '3564950020-2247486729_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Gz7FhAGtQFxlqu0ot8IrPQ', '3564950020-2247486721_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/1Jr4W_QQzl1H_O9r_qpuJg', '3564950020-2247486713_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/i795p17YftTOGr7emQSgbA', '3564950020-2247486703_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大乒协 处理完成等待8秒后继续...
+成功0条
+执行耗时: 17.59秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3070994044', 1, 0)
+更新公众号MP_WXS_3070994044的sync_time为1780369312
+更新公众号MP_WXS_3070994044的updated_at为2026-06-02 11:01:52.008273
+更新公众号MP_WXS_3070994044的update_time为1780369312
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369312, 1780369312, '2026-06-02 11:01:52.008273', 'MP_WXS_3070994044')
+Web浏览器模式,是否采集[浙大体育与艺术]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/vsDnTN1KXQ5r_RO69nfgYw', '3070994044-2650963382_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/IBH-t2LfFkMS-TDcVwltaQ', '3070994044-2650963382_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Z3kTiNcucy_r-mPJ2PRAFg', '3070994044-2650963382_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/n6bLqkDCxOgAWp4U072FAQ', '3070994044-2650963293_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/WPhwMZXXIS6JQKpzax_iCg', '3070994044-2650963293_2', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963293_2',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963293_2')
+Article already exists: 3070994044-2650963293_2
+Updated article (CHECK_EXIST): 3070994044-2650963293_2 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JFerehHRLggjhPHxSB4wEA', '3070994044-2650963293_3', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963293_3',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963293_3')
+Article already exists: 3070994044-2650963293_3
+Updated article (CHECK_EXIST): 3070994044-2650963293_3 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/ygtq3zic3xCoBKo6EDA76w', '3070994044-2650963244_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963244_1',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963244_1')
+Article already exists: 3070994044-2650963244_1
+Updated article (CHECK_EXIST): 3070994044-2650963244_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/K7O8TU0f8hBI_xZ5iYF5CQ', '3070994044-2650963244_2', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963244_2',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963244_2')
+Article already exists: 3070994044-2650963244_2
+Updated article (CHECK_EXIST): 3070994044-2650963244_2 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/dtDb5sAQM4tt-Dj2Toqt5A', '3070994044-2650963213_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963213_1',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963213_1')
+Article already exists: 3070994044-2650963213_1
+Updated article (CHECK_EXIST): 3070994044-2650963213_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/OGGA295EhXf91LuPrCZ9sg', '3070994044-2650963213_2', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3070994044-2650963213_2',)
+[SQL] UPDATE articles SET status=?, content=? WHERE articles.id = ?
+[参数] (1, '', '3070994044-2650963213_2')
+Article already exists: 3070994044-2650963213_2
+Updated article (CHECK_EXIST): 3070994044-2650963213_2 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/XHe4Me4gxOVwF8C-nU6XaA', '3070994044-2650963213_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/j7fLZ7chZ-SlTxvq_iLyEQ', '3070994044-2650963162_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/rfOG1Gvtr8E9jYhB4A4nGw', '3070994044-2650963162_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/9FVMTGcN_CkFUwdMU00How', '3070994044-2650963162_3', 1, 0)
+第1页爬取成功
+
+item end
+浙大体育与艺术 处理完成等待4秒后继续...
+成功0条
+执行耗时: 5.96秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3286401661', 1, 0)
+更新公众号MP_WXS_3286401661的sync_time为1780369317
+更新公众号MP_WXS_3286401661的updated_at为2026-06-02 11:01:57.991041
+更新公众号MP_WXS_3286401661的update_time为1780369317
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369317, 1780369317, '2026-06-02 11:01:57.991041', 'MP_WXS_3286401661')
+Web浏览器模式,是否采集[浙大羽协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Xu5MeUEGmqCGsyWlJzlunw', '3286401661-2247487911_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/wypoUiOmvczHfw6GOIeuMw', '3286401661-2247487897_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/zJi5_oD3mWfdGArchHcXqA', '3286401661-2247487877_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/2VqCNziFmXdZdiLhx8UxrA', '3286401661-2247487855_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/q7zriPxhV-iCnu0vNCnTpQ', '3286401661-2247487843_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大羽协 处理完成等待5秒后继续...
+成功0条
+执行耗时: 8.48秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3010053825', 1, 0)
+更新公众号MP_WXS_3010053825的sync_time为1780369326
+更新公众号MP_WXS_3010053825的updated_at为2026-06-02 11:02:06.487060
+更新公众号MP_WXS_3010053825的update_time为1780369326
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369326, 1780369326, '2026-06-02 11:02:06.487060', 'MP_WXS_3010053825')
+Web浏览器模式,是否采集[浙大足协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/aCMbLxF3bd7b1jygb5iYmw', '3010053825-2659055253_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/SOtR08K_Goxv4nvtV5F0rA', '3010053825-2659055253_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/BABx1gkAu-rE9qjBJeqfAw', '3010053825-2659055253_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/eHsL_T24Wkdj5b8bqbZD1g', '3010053825-2659055250_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/7wfEXIqHkI0BZqPpon-MtA', '3010053825-2659055250_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/-Em5v6Ql3oS8i1Z1ftWURQ', '3010053825-2659055250_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/DZBYPPthkZhmRWB9hLP0LQ', '3010053825-2659055250_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/uqppduJoVMDrF6_vn9MReg', '3010053825-2659055215_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/v1YMW_-d7iM9fmOI_oYSew', '3010053825-2659055215_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/fjY6gfwKEBfJ3cj43jFxyQ', '3010053825-2659055215_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JiuMi_srva0bM_No8mtPSg', '3010053825-2659055215_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/VhGDcOnIfSXmeZwWrNB32w', '3010053825-2659055215_5', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/yUvPiHrh7S9PigKaLhqCYQ', '3010053825-2659055191_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/EKuEQ1rr5NCiS_vEgaG6KQ', '3010053825-2659055191_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/tUzeDR73CSUpHTzCPLgPuQ', '3010053825-2659055191_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/snmz9rn1fqKUOIZ53ZtRRw', '3010053825-2659055191_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/wDOd1J9dtbymJwJWnI6hqA', '3010053825-2659055176_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大足协 处理完成等待5秒后继续...
+成功0条
+执行耗时: 8.00秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3096293834', 1, 0)
+更新公众号MP_WXS_3096293834的sync_time为1780369334
+更新公众号MP_WXS_3096293834的updated_at为2026-06-02 11:02:14.509535
+更新公众号MP_WXS_3096293834的update_time为1780369334
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369334, 1780369334, '2026-06-02 11:02:14.509535', 'MP_WXS_3096293834')
+Web浏览器模式,是否采集[浙大篮联]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/ph4M1pgLQUunRypl5PLaAg', '3096293834-2652137568_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/RatYPm_CURtbH-yPJNli4g', '3096293834-2652137564_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/WnyMAazLcToZvpH2S7jEmQ', '3096293834-2652137561_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Perg_3_XZSJ_Zz4Cfcmr6w', '3096293834-2652137534_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/4XO-WmRBCu5XqNKqPtmbAQ', '3096293834-2652137522_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大篮联 处理完成等待5秒后继续...
+成功0条
+执行耗时: 6.54秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3296204068', 1, 0)
+更新公众号MP_WXS_3296204068的sync_time为1780369341
+更新公众号MP_WXS_3296204068的updated_at为2026-06-02 11:02:21.071595
+更新公众号MP_WXS_3296204068的update_time为1780369341
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369341, 1780369341, '2026-06-02 11:02:21.071595', 'MP_WXS_3296204068')
+Web浏览器模式,是否采集[浙大网协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/GsxQx8lkORi_Q-9VMN-szQ', '3296204068-2247486093_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/LkhI2kBVhxs7yMm7ffSNdQ', '3296204068-2247486083_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/3JxHriyF-m3LiMkMyUl3bQ', '3296204068-2247486075_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/mqJgA96yp3VNpLoS6VnuYQ', '3296204068-2247486073_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3296204068-2247486073_1',)
+Article already exists: 3296204068-2247486073_1
+Updated article (CHECK_EXIST): 3296204068-2247486073_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/c5X8P-DlHoXlfEMSvd6luA', '3296204068-2247486038_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大网协 处理完成等待5秒后继续...
+成功0条
+执行耗时: 13.45秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3092253581', 1, 0)
+更新公众号MP_WXS_3092253581的sync_time为1780369354
+更新公众号MP_WXS_3092253581的updated_at为2026-06-02 11:02:34.540108
+更新公众号MP_WXS_3092253581的update_time为1780369354
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369354, 1780369354, '2026-06-02 11:02:34.540108', 'MP_WXS_3092253581')
+Web浏览器模式,是否采集[浙大台协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/3OoiA3J8L4q3tYnsdNhwOg', '3092253581-2651127434_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/0bA2jluL5yTDjA656VR0fA', '3092253581-2651127406_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JT7_WEFPpGssxSG2Hws5OQ', '3092253581-2651127399_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/k8LZ6SBYfqf9SZkppMXOJA', '3092253581-2651127311_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/v_qWd_Eg_JPt4meU0FfVrw', '3092253581-2651127305_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大台协 处理完成等待8秒后继续...
+成功0条
+执行耗时: 17.58秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3094010100', 1, 0)
+更新公众号MP_WXS_3094010100的sync_time为1780369372
+更新公众号MP_WXS_3094010100的updated_at为2026-06-02 11:02:52.139941
+更新公众号MP_WXS_3094010100的update_time为1780369372
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369372, 1780369372, '2026-06-02 11:02:52.139941', 'MP_WXS_3094010100')
+Web浏览器模式,是否采集[浙江大学排球社]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/vv-ueTk_QWlCiogc3CB4ZQ', '3094010100-2653406466_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3094010100-2653406466_1',)
+[SQL] UPDATE articles SET content=? WHERE articles.id = ?
+[参数] ('', '3094010100-2653406466_1')
+Article already exists: 3094010100-2653406466_1
+Updated article (CHECK_EXIST): 3094010100-2653406466_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/YaQTi7RLgRkP5bfyxEqvFw', '3094010100-2653406445_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/YTDWjsLa7ETwluSc4MDKUQ', '3094010100-2653406313_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/_dePnTpNKNVt3rTzESJ1mA', '3094010100-2653406299_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/blXalhPNip_xrGpG7ENaUw', '3094010100-2653406203_1', 1, 0)
+第1页爬取成功
+
+item end
+浙江大学排球社 处理完成等待5秒后继续...
+成功0条
+执行耗时: 12.49秒
+[]
+2026-06-02 11:03:04 - INFO - 所有公众号更新完成,共更新0条数据
+[2026-06-02 11:03:04] 文章抓取完成
+[2026-06-02 11:03:04] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ✨ +1  浙大乒协: 6 篇文章
+   ✨ +10  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ✨ +10  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ✨ +1  浙大台协: 10 篇文章
+   ✨ +2  浙江大学排球社: 10 篇文章
+
+✅ 新增 24 篇，总计 84 篇
+   已保存: urls.txt + web.md
+
+🤖 运行 fetch + parse 流水线...
+
+> zju-sports-hub@0.1.0 fetch
+> npx tsx scripts/fetch-wechat.ts --urls urls.txt --parse
+
+◇ injected env (3) from .env.local // tip: ⌘ suppress logs { quiet: true }
+📋 84 个链接待抓取
+
+📥 抓取: https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g...
+   ✅ 浙大乒协｜2026年“夏季杯”乒乓球赛等你来！.txt (859 字符)
+📥 抓取: https://mp.weixin.qq.com/s/BAKCPP5I003EkZiVBTO1Mw...
+   ✅ 三好杯｜智力运动会棋类项目：棋秤之间见真章.txt (2616 字符)
+📥 抓取: https://mp.weixin.qq.com/s/aS12BzVg4ZvPNJ4ppOpxGQ...
+   ✅ 演出预告  诗吟四季，乐颂山河：邀您一起共赴音乐之约.txt (2241 字符)
+📥 抓取: https://mp.weixin.qq.com/s/fxVn0p57EIAlFj6ukyiL4w...
+   ✅ 浙江大学首届“校超”圆满落幕  致敬每一位奔跑的浙大人.txt (837 字符)
+📥 抓取: https://mp.weixin.qq.com/s/Zh73XycY24sIosXsOdU8Yg...
+   ✅ 第三十四期音乐会客厅  让热忱随歌声绽放.txt (815 字符)
+📥 抓取: https://mp.weixin.qq.com/s/3om0ohIyrEN-SQ9KhD2aQA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/S-92FZ5Q_UX8ncd1OBmeSA...
+   ✅ 喜报｜公共体育与艺术部查苏生老师斩获全国武术套路锦标赛双冠.txt (797 字符)
+📥 抓取: https://mp.weixin.qq.com/s/9BnjtMr5Nh7suVyY6K3pAA...
+   ✅ 喜报  浙大普通生羽毛球队出征省大学生羽毛球锦标赛载誉而归.txt (1149 字符)
+📥 抓取: https://mp.weixin.qq.com/s/RJcdD9Mg3IAtLwt0jqEbUg...
+   ✅ 抢票预告  艺术小旅行第五十期——话剧《哥本哈根》.txt (2227 字符)
+📥 抓取: https://mp.weixin.qq.com/s/lTNeHQ3yhkSBjXaS-T-ovg...
+   ✅ 活动预告  文军新长征，重跑“西迁路”主题活动PLUS版闪亮登场！.txt (1631 字符)
+📥 抓取: https://mp.weixin.qq.com/s/UcMw9cmPyyqUFWKhyryY2w...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/Gz7FhAGtQFxlqu0ot8IrPQ...
+   ✅ 浙大乒协｜夏学期乒乓球辅导站开课啦！.txt (414 字符)
+📥 抓取: https://mp.weixin.qq.com/s/1Jr4W_QQzl1H_O9r_qpuJg...
+   ✅ 浙大乒协“琴球雅韵，一拍即合”游园活动.txt (458 字符)
+📥 抓取: https://mp.weixin.qq.com/s/i795p17YftTOGr7emQSgbA...
+   ✅ 浙大乒协｜乒乓球精品课程开始报名.txt (867 字符)
+📥 抓取: https://mp.weixin.qq.com/s/jH3D5H_o-rgnswePsiFbKA...
+   ✅ 浙大乒协丨2025三好杯赛后总结.txt (2879 字符)
+📥 抓取: https://mp.weixin.qq.com/s/Xu5MeUEGmqCGsyWlJzlunw...
+   ✅ 羽毛球三好杯圆满收官！.txt (1053 字符)
+📥 抓取: https://mp.weixin.qq.com/s/wypoUiOmvczHfw6GOIeuMw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/zJi5_oD3mWfdGArchHcXqA...
+   ✅ 羽动春风春季杯圆满收官.txt (398 字符)
+📥 抓取: https://mp.weixin.qq.com/s/2VqCNziFmXdZdiLhx8UxrA...
+   ⚠️ 正文太短 (20 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/q7zriPxhV-iCnu0vNCnTpQ...
+   ✅ 浙大羽协春季杯.txt (1615 字符)
+📥 抓取: https://mp.weixin.qq.com/s/oNuvZTtYeyq7gd62CdDFNQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/BCLrVda8wcwAzufY_XPrYw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/lk9_Fb8a1kSQVJEm8616uA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/E3el_Tw0hlrP7oM2WQT97Q...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/lFwc9C-ge0Mn7sYqxk9cww...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/L2lpO1bj15x5wDfc-iBa3w...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/ItXpDLD30edcfq2zFu8fgQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/Oi_b_6WzdrkDjDX0ZRkEUA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/ZsEY2ddu9nJPJtjMmcXLkQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/w4j6sr5xD7rDPWjiR2R4gw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/ph4M1pgLQUunRypl5PLaAg...
+   ⚠️ 正文太短 (36 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/RatYPm_CURtbH-yPJNli4g...
+   ✅ 浙江大学2026年本科生“三好杯”篮球比赛报名开始！.txt (2960 字符)
+📥 抓取: https://mp.weixin.qq.com/s/WnyMAazLcToZvpH2S7jEmQ...
+   ✅ 浙江大学2026年“篮联杯”篮球赛圆满结束.txt (1159 字符)
+📥 抓取: https://mp.weixin.qq.com/s/Perg_3_XZSJ_Zz4Cfcmr6w...
+   ✅ 浙大战报｜篮联杯半决赛收官！巅峰对决，决赛燃战在即.txt (885 字符)
+📥 抓取: https://mp.weixin.qq.com/s/4XO-WmRBCu5XqNKqPtmbAQ...
+   ✅ 篮联杯赛况回顾！.txt (204 字符)
+📥 抓取: https://mp.weixin.qq.com/s/GsxQx8lkORi_Q-9VMN-szQ...
+   ✅ 浙大网协2026春夏网球精品课招生进行中！.txt (1294 字符)
+📥 抓取: https://mp.weixin.qq.com/s/LkhI2kBVhxs7yMm7ffSNdQ...
+   ✅ 浙大网协：浙大网球队联合纳新.txt (1061 字符)
+📥 抓取: https://mp.weixin.qq.com/s/3JxHriyF-m3LiMkMyUl3bQ...
+   ✅ 浙大网协｜网球精品课重磅回归.txt (1738 字符)
+📥 抓取: https://mp.weixin.qq.com/s/mqJgA96yp3VNpLoS6VnuYQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/c5X8P-DlHoXlfEMSvd6luA...
+   ✅ 网球比赛来袭！！抢七大赛一触即发.txt (695 字符)
+📥 抓取: https://mp.weixin.qq.com/s/0bA2jluL5yTDjA656VR0fA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/JT7_WEFPpGssxSG2Hws5OQ...
+   ✅ 杆定乾坤，荣耀加冕  浙江大学台球协会“2025六球大奖赛”精彩回顾！.txt (1356 字符)
+📥 抓取: https://mp.weixin.qq.com/s/k8LZ6SBYfqf9SZkppMXOJA...
+   ✅ SICA 2024纳新｜What is SICA？.txt (3716 字符)
+📥 抓取: https://mp.weixin.qq.com/s/v_qWd_Eg_JPt4meU0FfVrw...
+   ✅ 2023浙大台协“迎新杯”正式启动（文末惊喜福利！）.txt (658 字符)
+📥 抓取: https://mp.weixin.qq.com/s/nd6AD-nzAFWaabyqnZPSUA...
+   ✅ 棋类精品课丨棋艺的精进携手美育二课分一起到来.txt (904 字符)
+📥 抓取: https://mp.weixin.qq.com/s/vZhNDtAMff4Cjl6ZPqXYcw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/P4fqThjzWBfLeqd-QRQlDA...
+   ✅ 2023浙大台协卓越班招生啦！（文末有彩蛋哦！！！）.txt (1061 字符)
+📥 抓取: https://mp.weixin.qq.com/s/LUN_2aZJHbDrZoiMgvkSow...
+   ⚠️ 正文太短 (61 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/L6wsch4xxw1oIOVBOfqXTw...
+   ✅ 纳新  台协春季纳新进行时~.txt (802 字符)
+📥 抓取: https://mp.weixin.qq.com/s/Pn33ZxOeRCsGVi-_XuDPLg...
+   ⚠️ 正文太短 (25 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/YTDWjsLa7ETwluSc4MDKUQ...
+   ✅ 【球势杯】志愿者招募！.txt (748 字符)
+📥 抓取: https://mp.weixin.qq.com/s/_dePnTpNKNVt3rTzESJ1mA...
+   ✅ 【球势杯】即刻报名，奔赴球势赛场！.txt (2189 字符)
+📥 抓取: https://mp.weixin.qq.com/s/blXalhPNip_xrGpG7ENaUw...
+   ✅ 【精品课程】请解锁你的排球人格！.txt (975 字符)
+📥 抓取: https://mp.weixin.qq.com/s/9kvp9R9vNIpT52kavAGKag...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/bZe2OpE-bPGnWofFgcCDEw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/5cEMHkIWWw5vlcosnqQuYA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/Eg3D_WI3djWhaSnnDE0ElA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/Di74ESNOBRYoOM32JBayEg...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/HR4Wa7cn-5H0e9ASMRaWhA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/d_p57wx6lVjgYGff2oYQ_g...
+   ⚠️ 正文太短 (22 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/f8ylDO-HgwZVbGGqdG3xyg...
+   ✅ 浙大乒协丨2026夏季杯赛后总结.txt (849 字符)
+📥 抓取: https://mp.weixin.qq.com/s/vsDnTN1KXQ5r_RO69nfgYw...
+   ✅ 第三十六期音乐会客厅 “琴键上的青春毕业礼”钢琴音乐会.txt (1660 字符)
+📥 抓取: https://mp.weixin.qq.com/s/IBH-t2LfFkMS-TDcVwltaQ...
+   ✅ 赛场风采  健美绽芳华，青春耀求是——浙江大学2026年“三好杯”健身健美比赛圆满落幕！.txt (1890 字符)
+📥 抓取: https://mp.weixin.qq.com/s/Z3kTiNcucy_r-mPJ2PRAFg...
+   ✅ 专家进校园 美育润心田  小提琴大师走进浙大美育课堂.txt (2444 字符)
+📥 抓取: https://mp.weixin.qq.com/s/n6bLqkDCxOgAWp4U072FAQ...
+   ✅ 斩获两金！祝贺我校普通生武术队省锦标赛再创佳绩！.txt (1056 字符)
+📥 抓取: https://mp.weixin.qq.com/s/WPhwMZXXIS6JQKpzax_iCg...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/JFerehHRLggjhPHxSB4wEA...
+   ✅ 第三十五期音乐会客厅回顾｜博物天下，五月筝声.txt (682 字符)
+📥 抓取: https://mp.weixin.qq.com/s/ygtq3zic3xCoBKo6EDA76w...
+   ✅ 喜报  浙大田径健儿斩获省第十一届大学生田径锦标赛21金12银5铜！.txt (1836 字符)
+📥 抓取: https://mp.weixin.qq.com/s/K7O8TU0f8hBI_xZ5iYF5CQ...
+   ✅ 即刻抢票丨浙江大学“大学之声”高水平艺术展演——文琴键盘乐团纪念莫扎特诞辰270周年专场音乐会.txt (1211 字符)
+📥 抓取: https://mp.weixin.qq.com/s/dtDb5sAQM4tt-Dj2Toqt5A...
+   ✅ 浙江大学普通生男篮荣获CUBAL二级联赛东南赛区亚军！.txt (1529 字符)
+📥 抓取: https://mp.weixin.qq.com/s/OGGA295EhXf91LuPrCZ9sg...
+   ✅ 演出预告丨浙江大学“大学之声”高水平艺术展演——文琴键盘乐团纪念莫扎特诞辰270周年专场音乐会.txt (1211 字符)
+📥 抓取: https://mp.weixin.qq.com/s/aCMbLxF3bd7b1jygb5iYmw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/SOtR08K_Goxv4nvtV5F0rA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/BABx1gkAu-rE9qjBJeqfAw...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/eHsL_T24Wkdj5b8bqbZD1g...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/7wfEXIqHkI0BZqPpon-MtA...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/-Em5v6Ql3oS8i1Z1ftWURQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/DZBYPPthkZhmRWB9hLP0LQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/uqppduJoVMDrF6_vn9MReg...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/v1YMW_-d7iM9fmOI_oYSew...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/fjY6gfwKEBfJ3cj43jFxyQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/3OoiA3J8L4q3tYnsdNhwOg...
+   ✅ 浙大台球年度排行榜火热出炉！首届月度排位赛战果一览.txt (503 字符)
+📥 抓取: https://mp.weixin.qq.com/s/vv-ueTk_QWlCiogc3CB4ZQ...
+   ⚠️ 正文太短 (0 字符)，可能被拦截
+📥 抓取: https://mp.weixin.qq.com/s/YaQTi7RLgRkP5bfyxEqvFw...
+   ✅ 进阶蓄力，驰骋赛场丨排球高级班启动报名！.txt (647 字符)
+
+✅ 45/84 篇抓取成功 → /Users/bob.li/Code/ZJU-Sports-Hub/articles/
+
+🤖 批量 LLM 解析 articles/ ...
+◇ injected env (0) from .env.local // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+📂 发现 46 个文件待处理
+
+📄 读取文件: 2023浙大台协“迎新杯”正式启动（文末惊喜福利！）.txt (658 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/v_qWd_Eg_JPt4meU0FfVrw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 2023浙大台协卓越班招生啦！（文末有彩蛋哦！！！）.txt (1061 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/P4fqThjzWBfLeqd-QRQlDA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: SICA 2024纳新｜What is SICA？.txt (3716 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/k8LZ6SBYfqf9SZkppMXOJA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 【球势杯】即刻报名，奔赴球势赛场！.txt (2189 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/_dePnTpNKNVt3rTzESJ1mA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 【球势杯】志愿者招募！.txt (748 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/YTDWjsLa7ETwluSc4MDKUQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 【精品课程】请解锁你的排球人格！.txt (975 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/blXalhPNip_xrGpG7ENaUw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 三好杯｜智力运动会棋类项目：棋秤之间见真章.txt (2616 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/BAKCPP5I003EkZiVBTO1Mw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 专家进校园 美育润心田  小提琴大师走进浙大美育课堂.txt (2444 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Z3kTiNcucy_r-mPJ2PRAFg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 即刻抢票丨浙江大学“大学之声”高水平艺术展演——文琴键盘乐团纪念莫扎特诞辰270周年专场音乐会.txt (1211 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/K7O8TU0f8hBI_xZ5iYF5CQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 喜报  浙大普通生羽毛球队出征省大学生羽毛球锦标赛载誉而归.txt (1149 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/9BnjtMr5Nh7suVyY6K3pAA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 喜报  浙大田径健儿斩获省第十一届大学生田径锦标赛21金12银5铜！.txt (1836 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/ygtq3zic3xCoBKo6EDA76w
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 喜报｜公共体育与艺术部查苏生老师斩获全国武术套路锦标赛双冠.txt (797 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/S-92FZ5Q_UX8ncd1OBmeSA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 抢票预告  艺术小旅行第五十期——话剧《哥本哈根》.txt (2227 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/RJcdD9Mg3IAtLwt0jqEbUg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 斩获两金！祝贺我校普通生武术队省锦标赛再创佳绩！.txt (1056 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/n6bLqkDCxOgAWp4U072FAQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 杆定乾坤，荣耀加冕  浙江大学台球协会“2025六球大奖赛”精彩回顾！.txt (1356 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/JT7_WEFPpGssxSG2Hws5OQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 棋类精品课丨棋艺的精进携手美育二课分一起到来.txt (904 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/nd6AD-nzAFWaabyqnZPSUA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 活动预告  文军新长征，重跑“西迁路”主题活动PLUS版闪亮登场！.txt (1631 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/lTNeHQ3yhkSBjXaS-T-ovg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大乒协“琴球雅韵，一拍即合”游园活动.txt (458 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/1Jr4W_QQzl1H_O9r_qpuJg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 浙大乒协丨2025三好杯赛后总结.txt (2879 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/jH3D5H_o-rgnswePsiFbKA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大乒协丨2026夏季杯赛后总结.txt (849 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/f8ylDO-HgwZVbGGqdG3xyg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大乒协｜2026年“夏季杯”乒乓球赛等你来！.txt (859 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大乒协｜乒乓球精品课程开始报名.txt (867 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/i795p17YftTOGr7emQSgbA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 浙大乒协｜夏学期乒乓球辅导站开课啦！.txt (414 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Gz7FhAGtQFxlqu0ot8IrPQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大台球年度排行榜火热出炉！首届月度排位赛战果一览.txt (503 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/3OoiA3J8L4q3tYnsdNhwOg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大战报｜篮联杯半决赛收官！巅峰对决，决赛燃战在即.txt (885 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Perg_3_XZSJ_Zz4Cfcmr6w
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大网协2026春夏网球精品课招生进行中！.txt (1294 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/GsxQx8lkORi_Q-9VMN-szQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大网协：浙大网球队联合纳新.txt (1061 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/LkhI2kBVhxs7yMm7ffSNdQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 浙大网协｜网球精品课重磅回归.txt (1738 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/3JxHriyF-m3LiMkMyUl3bQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙大羽协春季杯.txt (1615 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/q7zriPxhV-iCnu0vNCnTpQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙江大学2026年“篮联杯”篮球赛圆满结束.txt (1159 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/WnyMAazLcToZvpH2S7jEmQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙江大学2026年本科生“三好杯”篮球比赛报名开始！.txt (2960 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/RatYPm_CURtbH-yPJNli4g
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙江大学普通生男篮荣获CUBAL二级联赛东南赛区亚军！.txt (1529 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/dtDb5sAQM4tt-Dj2Toqt5A
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 浙江大学首届“校超”圆满落幕  致敬每一位奔跑的浙大人.txt (837 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/fxVn0p57EIAlFj6ukyiL4w
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 演出预告  诗吟四季，乐颂山河：邀您一起共赴音乐之约.txt (2241 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/aS12BzVg4ZvPNJ4ppOpxGQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 演出预告丨浙江大学“大学之声”高水平艺术展演——文琴键盘乐团纪念莫扎特诞辰270周年专场音乐会.txt (1211 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/OGGA295EhXf91LuPrCZ9sg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 第三十五期音乐会客厅回顾｜博物天下，五月筝声.txt (682 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/JFerehHRLggjhPHxSB4wEA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 第三十六期音乐会客厅 “琴键上的青春毕业礼”钢琴音乐会.txt (1660 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/vsDnTN1KXQ5r_RO69nfgYw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 第三十四期音乐会客厅  让热忱随歌声绽放.txt (815 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Zh73XycY24sIosXsOdU8Yg
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 篮联杯赛况回顾！.txt (204 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/4XO-WmRBCu5XqNKqPtmbAQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 纳新  台协春季纳新进行时~.txt (802 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/L6wsch4xxw1oIOVBOfqXTw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 0 条赛事
+   🗑  非体育内容，已删除
+📄 读取文件: 网球比赛来袭！！抢七大赛一触即发.txt (695 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/c5X8P-DlHoXlfEMSvd6luA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 羽动春风春季杯圆满收官.txt (398 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/zJi5_oD3mWfdGArchHcXqA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 羽毛球三好杯圆满收官！.txt (1053 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/Xu5MeUEGmqCGsyWlJzlunw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 赛场风采  健美绽芳华，青春耀求是——浙江大学2026年“三好杯”健身健美比赛圆满落幕！.txt (1890 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/IBH-t2LfFkMS-TDcVwltaQ
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 进阶蓄力，驰骋赛场丨排球高级班启动报名！.txt (647 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/YaQTi7RLgRkP5bfyxEqvFw
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+📄 读取文件: 首届浙江大学台球积分排名赛，它来了！.txt (867 字符)
+   🔗 原文链接: https://mp.weixin.qq.com/s/0bA2jluL5yTDjA656VR0fA
+🤖 正在调用 deepseek-chat 解析推文...
+📋 提取到 1 条赛事
+🔁 去重：跳过 23 条重复赛事
+🗑  过期清理：移除 26 条超过5天的赛事
+✅ 已保存 4 条赛事到 /Users/bob.li/Code/ZJU-Sports-Hub/src/data/events.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. 迎新杯开赛啦——浙大台协中式八球让球赛
+     🏷 other | 📍 zijingang | 📅 2023-12-03 | ⏰ 截止 2023-11-26
+     ○ 无加分
+  2. 2023浙大台协卓越班招生
+     🏷 other | 📍 zijingang | 📅 2023-04-01 | ⏰ 截止 2023-03-23
+     ○ 无加分
+  3. 2026年浙江大学“球势杯”排球赛
+     🏷 ball | 📍 zijingang | 📅 2026-05-29 | ⏰ 截止 2026-05-08
+     ○ 无加分
+  4. 球势杯排球比赛
+     🏷 ball | 📍 zijingang | 📅 2025-05-29 | ⏰ 截止 2025-05-22
+     ○ 无加分
+  5. 排协春夏学期排球精品课
+     🏷 ball | 📍 zijingang | 📅 2025-04-19 | ⏰ 截止 2025-04-15
+     ✅ 二课/综素
+  6. 浙江大学2026年“三好杯”第四届智力运动会棋类项目
+     🏷 other | 📍 zijingang | 📅 2026-05-23 | ⏰ 截止 2026-05-21
+     ✅ 二课/综素
+  7. 2026年浙江省大学生羽毛球锦标赛（甲丙组）
+     🏷 ball | 📍 zijingang | 📅 2026-05-11 | ⏰ 截止 2026-05-04
+     ○ 无加分
+  8. 浙江省第十一届大学生田径锦标赛
+     🏷 track | 📍 zijingang | 📅 2025-05-21 | ⏰ 截止 2025-05-14
+     ○ 无加分
+  9. 浙江省大学生武术（甲组）锦标赛
+     🏷 other | 📍 zijingang | 📅 2026-05-26 | ⏰ 截止 2026-05-19
+     ○ 无加分
+  10. 2025六球大奖赛
+     🏷 other | 📍 zijingang | 📅 2025-12-07 | ⏰ 截止 2025-11-30
+     ○ 无加分
+  11. 文军新长征 重跑"西迁路"
+     🏷 other | 📍 zijingang | 📅 2026-05-22 | ⏰ 截止 2026-05-20
+     ✅ 二课/综素
+  12. 2025学年三好杯乒乓球赛
+     🏷 ball | 📍 zijingang | 📅 2025-12-07 | ⏰ 截止 2025-11-30
+     ○ 无加分
+  13. 2026年浙江大学夏季杯乒乓球赛
+     🏷 ball | 📍 zijingang | 📅 2026-07-01 | ⏰ 截止 2026-06-24
+     ○ 无加分
+  14. 夏季杯
+     🏷 ball | 📍 zijingang | 📅 2025-05-16 | ⏰ 截止 2026-05-13
+     ✅ 二课/综素
+  15. 辅导站国球经典・一拍即合乒乓辅导站开课啦
+     🏷 ball | 📍 zijingang | 📅 2025-04-07 | ⏰ 截止 2025-03-31
+     ○ 无加分
+  16. 浙江大学首届月度台球排位赛
+     🏷 other | 📍 zijingang | 📅 2025-04-07 | ⏰ 截止 2025-03-31
+     ○ 无加分
+  17. 浙江大学篮联杯篮球比赛决赛
+     🏷 ball | 📍 zijingang | 📅 2025-04-12 | ⏰ 截止 2025-04-05
+     ○ 无加分
+  18. 浙江大学网球课程报名
+     🏷 ball | 📍 zijingang | 📅 2025-03-07 | ⏰ 截止 2025-03-04
+     ✅ 二课/综素
+  19. 2025网球精品课
+     🏷 ball | 📍 zijingang | 📅 2025-09-28 | ⏰ 截止 2025-09-19
+     ✅ 二课/综素
+  20. 浙大羽协春季杯
+     🏷 ball | 📍 zijingang | 📅 2026-03-28 | ⏰ 截止 2026-03-23
+     ✅ 二课/综素
+  21. 浙江大学2026年“篮联杯”篮球赛
+     🏷 ball | 📍 zijingang | 📅 2026-04-12 | ⏰ 截止 2026-04-05
+     ○ 无加分
+  22. 浙江大学2026年"三好杯"篮球比赛
+     🏷 ball | 📍 zijingang | 📅 2026-05-08 | ⏰ 截止 2026-05-05
+     ✅ 二课/综素
+  23. 第28届全国大学生篮球联赛二级联赛（东南赛区）
+     🏷 ball | 📍 zijingang | 📅 2026-05-13 | ⏰ 截止 2026-05-06
+     ○ 无加分
+  24. 浙江大学首届“校超”足球比赛总决赛
+     🏷 ball | 📍 zijingang | 📅 2026-05-17 | ⏰ 截止 2026-05-10
+     ○ 无加分
+  25. 抢七大赛-浙江大学学生网球协会
+     🏷 ball | 📍 zijingang | 📅 2025-05-18 | ⏰ 截止 2025-05-11
+     ○ 无加分
+  26. 浙大羽协春季杯
+     🏷 ball | 📍 zijingang | 📅 2025-03-28 | ⏰ 截止 2025-03-21
+     ○ 无加分
+  27. 2026浙大“三好杯”羽毛球赛圆满落幕
+     🏷 ball | 📍 zijingang | 📅 2026-04-15 | ⏰ 截止 2026-04-08
+     ○ 无加分
+  28. 浙江大学2026年“三好杯”健身健美比赛
+     🏷 other | 📍 zijingang | 📅 2026-05-29 | ⏰ 截止 2026-05-22
+     ✅ 二课/综素
+  29. 2026~2027学年秋冬学期排球高级班报名启动
+     🏷 ball | 📍 zijingang | 📅 2026-09-21 | ⏰ 截止 2026-05-29
+     ○ 无加分
+  30. 浙江大学台球积分排名赛
+     🏷 other | 📍 zijingang | 📅 2025-05-23 | ⏰ 截止 2025-05-22
+     ○ 无加分
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-06-02 11:08:18] 清理过期文章文件...
+[2026-06-02 11:08:19] 文章清理完成
+[2026-06-02 11:08:19] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    4.79 kB        92.1 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-06-02 11:08:33] 有新赛事，提交并推送 GitHub...
+[main a20fb95] auto: sync events 2026-06-02
+ 11 files changed, 116 insertions(+), 279 deletions(-)
+ create mode 100644 "articles/\345\226\234\346\212\245  \346\265\231\345\244\247\347\224\260\345\276\204\345\201\245\345\204\277\346\226\251\350\216\267\347\234\201\347\254\254\345\215\201\344\270\200\345\261\212\345\244\247\345\255\246\347\224\237\347\224\260\345\276\204\351\224\246\346\240\207\350\265\23321\351\207\22112\351\223\2665\351\223\234\357\274\201.txt"
+ create mode 100644 "articles/\346\226\251\350\216\267\344\270\244\351\207\221\357\274\201\347\245\235\350\264\272\346\210\221\346\240\241\346\231\256\351\200\232\347\224\237\346\255\246\346\234\257\351\230\237\347\234\201\351\224\246\346\240\207\350\265\233\345\206\215\345\210\233\344\275\263\347\273\251\357\274\201.txt"
+ create mode 100644 "articles/\346\265\231\345\244\247\344\271\222\345\215\217\344\270\2502026\345\244\217\345\255\243\346\235\257\350\265\233\345\220\216\346\200\273\347\273\223.txt"
+ create mode 100644 "articles/\346\265\231\345\244\247\345\217\260\347\220\203\345\271\264\345\272\246\346\216\222\350\241\214\346\246\234\347\201\253\347\203\255\345\207\272\347\202\211\357\274\201\351\246\226\345\261\212\346\234\210\345\272\246\346\216\222\344\275\215\350\265\233\346\210\230\346\236\234\344\270\200\350\247\210.txt"
+ create mode 100644 "articles/\346\265\231\346\261\237\345\244\247\345\255\246\346\231\256\351\200\232\347\224\237\347\224\267\347\257\256\350\215\243\350\216\267CUBAL\344\272\214\347\272\247\350\201\224\350\265\233\344\270\234\345\215\227\350\265\233\345\214\272\344\272\232\345\206\233\357\274\201.txt"
+ create mode 100644 "articles/\350\265\233\345\234\272\351\243\216\351\207\207  \345\201\245\347\276\216\347\273\275\350\212\263\345\215\216\357\274\214\351\235\222\346\230\245\350\200\200\346\261\202\346\230\257\342\200\224\342\200\224\346\265\231\346\261\237\345\244\247\345\255\2462026\345\271\264\342\200\234\344\270\211\345\245\275\346\235\257\342\200\235\345\201\245\350\272\253\345\201\245\347\276\216\346\257\224\350\265\233\345\234\206\346\273\241\350\220\275\345\271\225\357\274\201.txt"
+ create mode 100644 "articles/\350\277\233\351\230\266\350\223\204\345\212\233\357\274\214\351\251\260\351\252\213\350\265\233\345\234\272\344\270\250\346\216\222\347\220\203\351\253\230\347\272\247\347\217\255\345\220\257\345\212\250\346\212\245\345\220\215\357\274\201.txt"
+ delete mode 100644 "articles/\351\246\226\345\261\212\346\265\231\346\261\237\345\244\247\345\255\246\345\217\260\347\220\203\347\247\257\345\210\206\346\216\222\345\220\215\350\265\233\357\274\214\345\256\203\346\235\245\344\272\206\357\274\201.txt"
+To https://github.com/LiHaoze-Bob/ZJU-Sports-Hub
+   18ad73f..a20fb95  main -> main
+[2026-06-02 11:08:36] GitHub 推送完成
+[2026-06-02 11:08:36] 部署 Cloudflare Pages...
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+
+ ⛅️ wrangler 4.93.0
+───────────────────
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mA request to the Cloudflare API (/accounts/64765d9400940d5fc5f78b1b627d75bd/pages/projects/zju-sports) failed.[0m
+
+  Authentication error [code: 10000]
+
+
+Getting User settings...
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mFailed to automatically retrieve account IDs for the logged in user.[0m
+
+  You may have incorrect permissions on your API token. You can skip this account check by adding an `account_id` in your Wrangler configuration file, or by setting the value of CLOUDFLARE_ACCOUNT_ID
+
+
+🪵  Logs were written to "/Users/bob.li/Library/Preferences/.wrangler/logs/wrangler-2026-06-02_03-08-37_929.log"
+
+[2026-06-02 11:08:52] ═══ 开始自动同步 ═══
+[2026-06-02 11:08:52] Git pull...
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[2026-06-02 11:08:52] ⚠️ Git pull 失败，继续同步...
+[2026-06-02 11:08:52] 确保 Docker 运行...
+[2026-06-02 11:08:53] Docker 已就绪
+[2026-06-02 11:08:53] we-mp-rss 已在运行
+[2026-06-02 11:08:53] 等待 we-mp-rss 服务就绪...
+[2026-06-02 11:08:53] we-mp-rss 服务已就绪
+[2026-06-02 11:08:53] 触发公众号文章抓取...
+Failed to fetch latest version: 403 Client Error: rate limit exceeded for url: https://api.github.com/repos/rachelos/we-mp-rss/releases/latest
+名称:we-mp-rss
+版本:1.5.2 API_BASE:/api/v1/wx
+[默认]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+Redis连接成功
+[文章采集API]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+生成桌面端 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.5931.81 Safari/537.36
+[任务调度]连接初始化
+[SQL] SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+[SQL] PRAGMA main.table_xinfo("articles")
+TaskQueueManager initialized, instance id: 140225136770560, tag: 文章采集
+TaskQueue singleton created, instance id: 140225136770560
+队列任务后台运行, instance id: 140225136770560
+TaskQueueManager initialized, instance id: 140225137075664, tag: 内容补抓
+ContentTaskQueue singleton created, instance id: 140225137075664
+队列任务后台运行, instance id: 140225137075664
+Queue Redis 连接成功
+/etc/timezone is deprecated in some distros, and no longer reliable. tzlocal is ignoring it, and you can likely delete it.
+开始更新
+采集模式:web
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.status = ?
+[参数] (1,)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3564950020', 1, 0)
+更新公众号MP_WXS_3564950020的sync_time为1780369735
+更新公众号MP_WXS_3564950020的updated_at为2026-06-02 11:08:55.386141
+更新公众号MP_WXS_3564950020的update_time为1780369735
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369735, 1780369735, '2026-06-02 11:08:55.386141', 'MP_WXS_3564950020')
+Web浏览器模式,是否采集[浙大乒协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/f8ylDO-HgwZVbGGqdG3xyg', '3564950020-2247486746_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Gt20KfU4fQM3O6LeA2OV7g', '3564950020-2247486729_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Gz7FhAGtQFxlqu0ot8IrPQ', '3564950020-2247486721_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/1Jr4W_QQzl1H_O9r_qpuJg', '3564950020-2247486713_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/i795p17YftTOGr7emQSgbA', '3564950020-2247486703_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大乒协 处理完成等待10秒后继续...
+成功0条
+执行耗时: 19.72秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3070994044', 1, 0)
+更新公众号MP_WXS_3070994044的sync_time为1780369755
+更新公众号MP_WXS_3070994044的updated_at为2026-06-02 11:09:15.127264
+更新公众号MP_WXS_3070994044的update_time为1780369755
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369755, 1780369755, '2026-06-02 11:09:15.127264', 'MP_WXS_3070994044')
+Web浏览器模式,是否采集[浙大体育与艺术]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/vsDnTN1KXQ5r_RO69nfgYw', '3070994044-2650963382_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/IBH-t2LfFkMS-TDcVwltaQ', '3070994044-2650963382_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Z3kTiNcucy_r-mPJ2PRAFg', '3070994044-2650963382_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/n6bLqkDCxOgAWp4U072FAQ', '3070994044-2650963293_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/WPhwMZXXIS6JQKpzax_iCg', '3070994044-2650963293_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JFerehHRLggjhPHxSB4wEA', '3070994044-2650963293_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/ygtq3zic3xCoBKo6EDA76w', '3070994044-2650963244_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/K7O8TU0f8hBI_xZ5iYF5CQ', '3070994044-2650963244_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/dtDb5sAQM4tt-Dj2Toqt5A', '3070994044-2650963213_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/OGGA295EhXf91LuPrCZ9sg', '3070994044-2650963213_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/XHe4Me4gxOVwF8C-nU6XaA', '3070994044-2650963213_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/j7fLZ7chZ-SlTxvq_iLyEQ', '3070994044-2650963162_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/rfOG1Gvtr8E9jYhB4A4nGw', '3070994044-2650963162_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/9FVMTGcN_CkFUwdMU00How', '3070994044-2650963162_3', 1, 0)
+第1页爬取成功
+
+item end
+浙大体育与艺术 处理完成等待10秒后继续...
+成功0条
+执行耗时: 18.77秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3286401661', 1, 0)
+更新公众号MP_WXS_3286401661的sync_time为1780369773
+更新公众号MP_WXS_3286401661的updated_at为2026-06-02 11:09:33.921041
+更新公众号MP_WXS_3286401661的update_time为1780369773
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369773, 1780369773, '2026-06-02 11:09:33.921041', 'MP_WXS_3286401661')
+Web浏览器模式,是否采集[浙大羽协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Xu5MeUEGmqCGsyWlJzlunw', '3286401661-2247487911_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/wypoUiOmvczHfw6GOIeuMw', '3286401661-2247487897_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/zJi5_oD3mWfdGArchHcXqA', '3286401661-2247487877_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/2VqCNziFmXdZdiLhx8UxrA', '3286401661-2247487855_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/q7zriPxhV-iCnu0vNCnTpQ', '3286401661-2247487843_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大羽协 处理完成等待10秒后继续...
+成功0条
+执行耗时: 10.58秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3010053825', 1, 0)
+更新公众号MP_WXS_3010053825的sync_time为1780369784
+更新公众号MP_WXS_3010053825的updated_at为2026-06-02 11:09:44.522040
+更新公众号MP_WXS_3010053825的update_time为1780369784
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369784, 1780369784, '2026-06-02 11:09:44.522040', 'MP_WXS_3010053825')
+Web浏览器模式,是否采集[浙大足协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/aCMbLxF3bd7b1jygb5iYmw', '3010053825-2659055253_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/SOtR08K_Goxv4nvtV5F0rA', '3010053825-2659055253_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/BABx1gkAu-rE9qjBJeqfAw', '3010053825-2659055253_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/eHsL_T24Wkdj5b8bqbZD1g', '3010053825-2659055250_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/7wfEXIqHkI0BZqPpon-MtA', '3010053825-2659055250_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/-Em5v6Ql3oS8i1Z1ftWURQ', '3010053825-2659055250_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/DZBYPPthkZhmRWB9hLP0LQ', '3010053825-2659055250_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/uqppduJoVMDrF6_vn9MReg', '3010053825-2659055215_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/v1YMW_-d7iM9fmOI_oYSew', '3010053825-2659055215_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/fjY6gfwKEBfJ3cj43jFxyQ', '3010053825-2659055215_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JiuMi_srva0bM_No8mtPSg', '3010053825-2659055215_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/VhGDcOnIfSXmeZwWrNB32w', '3010053825-2659055215_5', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/yUvPiHrh7S9PigKaLhqCYQ', '3010053825-2659055191_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/EKuEQ1rr5NCiS_vEgaG6KQ', '3010053825-2659055191_2', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/tUzeDR73CSUpHTzCPLgPuQ', '3010053825-2659055191_3', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/snmz9rn1fqKUOIZ53ZtRRw', '3010053825-2659055191_4', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/wDOd1J9dtbymJwJWnI6hqA', '3010053825-2659055176_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大足协 处理完成等待9秒后继续...
+成功0条
+执行耗时: 15.84秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3096293834', 1, 0)
+更新公众号MP_WXS_3096293834的sync_time为1780369800
+更新公众号MP_WXS_3096293834的updated_at为2026-06-02 11:10:00.382396
+更新公众号MP_WXS_3096293834的update_time为1780369800
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369800, 1780369800, '2026-06-02 11:10:00.382396', 'MP_WXS_3096293834')
+Web浏览器模式,是否采集[浙大篮联]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/ph4M1pgLQUunRypl5PLaAg', '3096293834-2652137568_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/RatYPm_CURtbH-yPJNli4g', '3096293834-2652137564_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/WnyMAazLcToZvpH2S7jEmQ', '3096293834-2652137561_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/Perg_3_XZSJ_Zz4Cfcmr6w', '3096293834-2652137534_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/4XO-WmRBCu5XqNKqPtmbAQ', '3096293834-2652137522_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大篮联 处理完成等待8秒后继续...
+成功0条
+执行耗时: 11.56秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3296204068', 1, 0)
+更新公众号MP_WXS_3296204068的sync_time为1780369811
+更新公众号MP_WXS_3296204068的updated_at为2026-06-02 11:10:11.957074
+更新公众号MP_WXS_3296204068的update_time为1780369811
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369811, 1780369811, '2026-06-02 11:10:11.957074', 'MP_WXS_3296204068')
+Web浏览器模式,是否采集[浙大网协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/GsxQx8lkORi_Q-9VMN-szQ', '3296204068-2247486093_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/LkhI2kBVhxs7yMm7ffSNdQ', '3296204068-2247486083_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/3JxHriyF-m3LiMkMyUl3bQ', '3296204068-2247486075_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/mqJgA96yp3VNpLoS6VnuYQ', '3296204068-2247486073_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3296204068-2247486073_1',)
+Article already exists: 3296204068-2247486073_1
+Updated article (CHECK_EXIST): 3296204068-2247486073_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/c5X8P-DlHoXlfEMSvd6luA', '3296204068-2247486038_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大网协 处理完成等待8秒后继续...
+成功0条
+执行耗时: 12.54秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3092253581', 1, 0)
+更新公众号MP_WXS_3092253581的sync_time为1780369824
+更新公众号MP_WXS_3092253581的updated_at为2026-06-02 11:10:24.522256
+更新公众号MP_WXS_3092253581的update_time为1780369824
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369824, 1780369824, '2026-06-02 11:10:24.522256', 'MP_WXS_3092253581')
+Web浏览器模式,是否采集[浙大台协]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/3OoiA3J8L4q3tYnsdNhwOg', '3092253581-2651127434_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/0bA2jluL5yTDjA656VR0fA', '3092253581-2651127406_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/JT7_WEFPpGssxSG2Hws5OQ', '3092253581-2651127399_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/k8LZ6SBYfqf9SZkppMXOJA', '3092253581-2651127311_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/v_qWd_Eg_JPt4meU0FfVrw', '3092253581-2651127305_1', 1, 0)
+第1页爬取成功
+
+item end
+浙大台协 处理完成等待4秒后继续...
+成功0条
+执行耗时: 14.81秒
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT feeds.id AS feeds_id, feeds.mp_name AS feeds_mp_name, feeds.mp_cover AS feeds_mp_cover, feeds.mp_intro AS feeds_mp_intro, feeds.status AS feeds_status, feeds.sync_time AS feeds_sync_time, feeds.update_time AS feeds_update_time, feeds.created_at AS feeds_created_at, feeds.updated_at AS feeds_updated_at, feeds.faker_id AS feeds_faker_id 
+FROM feeds 
+WHERE feeds.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('MP_WXS_3094010100', 1, 0)
+更新公众号MP_WXS_3094010100的sync_time为1780369839
+更新公众号MP_WXS_3094010100的updated_at为2026-06-02 11:10:39.359515
+更新公众号MP_WXS_3094010100的update_time为1780369839
+[SQL] UPDATE feeds SET sync_time=?, update_time=?, updated_at=? WHERE feeds.id = ?
+[参数] (1780369839, 1780369839, '2026-06-02 11:10:39.359515', 'MP_WXS_3094010100')
+Web浏览器模式,是否采集[浙江大学排球社]内容：False
+
+第1页开始爬取
+
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/vv-ueTk_QWlCiogc3CB4ZQ', '3094010100-2653406466_1', 1, 0)
+[SQL] SELECT articles.id AS articles_id, articles.mp_id AS articles_mp_id, articles.title AS articles_title, articles.pic_url AS articles_pic_url, articles.url AS articles_url, articles.description AS articles_description, articles.extinfo AS articles_extinfo, articles.status AS articles_status, articles.publish_time AS articles_publish_time, articles.create_time AS articles_create_time, articles.publish_type AS articles_publish_type, articles.publish_src AS articles_publish_src, articles.publish_status AS articles_publish_status, articles.art_type AS articles_art_type, articles.show_type AS articles_show_type, articles.publish_info AS articles_publish_info, articles.original_check_type AS articles_original_check_type, articles.in_profile AS articles_in_profile, articles.pre_publish_status AS articles_pre_publish_status, articles.service_type AS articles_service_type, articles.item_show_type AS articles_item_show_type, articles.copyright_stat AS articles_copyright_stat, articles.has_red_packet_cover AS articles_has_red_packet_cover, articles.created_at AS articles_created_at, articles.updated_at AS articles_updated_at, articles.updated_at_millis AS articles_updated_at_millis, articles.is_export AS articles_is_export, articles.is_read AS articles_is_read, articles.is_favorite AS articles_is_favorite, articles.fix_fail_count AS articles_fix_fail_count, articles.has_content AS articles_has_content, articles.content AS articles_content, articles.content_html AS articles_content_html 
+FROM articles 
+WHERE articles.id = ?
+[参数] ('3094010100-2653406466_1',)
+Article already exists: 3094010100-2653406466_1
+Updated article (CHECK_EXIST): 3094010100-2653406466_1 (newer publish_time)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/YaQTi7RLgRkP5bfyxEqvFw', '3094010100-2653406445_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/YTDWjsLa7ETwluSc4MDKUQ', '3094010100-2653406313_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/_dePnTpNKNVt3rTzESJ1mA', '3094010100-2653406299_1', 1, 0)
+[SQL] SELECT count(*) AS count_1 
+FROM (SELECT users.id AS users_id 
+FROM users) AS anon_1
+[SQL] SELECT articles.id AS articles_id, articles.publish_time AS articles_publish_time, articles.status AS articles_status, articles.item_show_type AS articles_item_show_type, articles.description AS articles_description, articles.title AS articles_title 
+FROM articles 
+WHERE articles.url = ? OR articles.id = ?
+ LIMIT ? OFFSET ?
+[参数] ('https://mp.weixin.qq.com/s/blXalhPNip_xrGpG7ENaUw', '3094010100-2653406203_1', 1, 0)
+第1页爬取成功
+
+item end
+浙江大学排球社 处理完成等待7秒后继续...
+成功0条
+执行耗时: 15.68秒
+[]
+2026-06-02 11:10:55 - INFO - 所有公众号更新完成,共更新0条数据
+[2026-06-02 11:10:55] 文章抓取完成
+[2026-06-02 11:10:55] 拉取 RSS...
+
+> zju-sports-hub@0.1.0 sync-rss
+> npx tsx scripts/sync-rss.ts --parse
+
+📡 读取 RSS 订阅 (8 个公众号)...
+
+   ─  浙大乒协: 6 篇文章
+   ─  浙大体育与艺术: 10 篇文章
+   ─  浙大羽协: 5 篇文章
+   ─  浙大足协: 10 篇文章
+   ─  浙大篮联: 5 篇文章
+   ─  浙大网协: 5 篇文章
+   ─  浙大台协: 10 篇文章
+   ─  浙江大学排球社: 10 篇文章
+
+⏳ 暂无新文章 (已拉取 61 篇，均为已收录)
+[2026-06-02 11:10:57] 清理过期文章文件...
+[2026-06-02 11:10:58] 文章清理完成
+[2026-06-02 11:10:58] 构建静态站点...
+
+> zju-sports-hub@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/4) ...
+   Generating static pages (1/4) 
+   Generating static pages (2/4) 
+   Generating static pages (3/4) 
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    4.79 kB        92.1 kB
+└ ○ /_not-found                          873 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/117-f136890235b8316b.js       31.8 kB
+  ├ chunks/fd9d1056-2182e078483b259b.js  53.6 kB
+  └ other shared chunks (total)          1.86 kB
+
+
+○  (Static)  prerendered as static content
+
+[2026-06-02 11:11:12] 无新赛事，跳过部署
+[2026-06-02 11:11:12] 保持 we-mp-rss 运行，持续监控新文章
+[2026-06-02 11:11:12] 同步完成

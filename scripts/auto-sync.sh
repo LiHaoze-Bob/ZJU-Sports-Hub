@@ -1,9 +1,9 @@
 #!/bin/bash
 # ZJU Sports Hub — 自动同步脚本
-# 由 launchd 定时触发，每 2 天运行一次
+# 由 launchd 定时触发，每天 9:30 运行
 #
-# 流程: 启动 Docker → we-mp-rss 自动同步 → 拉取 RSS → 解析入库
-#       → 构建静态站 → 推送 GitHub + Cloudflare → 关闭 Docker
+# 流程: git pull → Docker + we-mp-rss → 抓取文章 → RSS → LLM 解析
+#       → 清理过期 → 构建 → 有变更则 push + 部署 → 清理 Docker
 
 set -e
 cd /Users/bob.li/Code/ZJU-Sports-Hub
@@ -13,64 +13,96 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 LOG_FILE="/Users/bob.li/Code/ZJU-Sports-Hub/.auto-sync.log"
-echo "" >> "$LOG_FILE"
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] ═══ 开始自动同步 ═══" >> "$LOG_FILE"
+DETAIL_LOG="/Users/bob.li/Code/ZJU-Sports-Hub/.auto-sync-detail.log"
 
-# ── Step 0: Start Docker + we-mp-rss ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 启动 Docker..." >> "$LOG_FILE"
+# ── helpers ──
+ts() { date '+%Y-%m-%d %H:%M:%S'; }
+log() { echo "[$(ts)] $1" >> "$LOG_FILE"; }
+detail() { echo "[$(ts)] $1" >> "$DETAIL_LOG"; }
+
+echo "" >> "$LOG_FILE"
+log "═════ 开始自动同步 ═════"
+
+# ── Step 0: Git pull ──
+log "Git pull..."
+git pull --rebase origin main >> "$DETAIL_LOG" 2>&1 && log "  ✓ pull 完成" || { log "  ⚠️ pull 失败，继续..."; git rebase --abort 2>/dev/null || true; }
+
+# ── Step 1: Ensure Docker + we-mp-rss ──
+log "Docker..."
 open -a Docker 2>/dev/null || true
-for i in $(seq 1 30); do
-  if docker info >/dev/null 2>&1; then
-    break
-  fi
-  sleep 2
-done
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] Docker 已就绪" >> "$LOG_FILE"
+for i in $(seq 1 30); do docker info >/dev/null 2>&1 && break; sleep 2; done
+log "  ✓ 已就绪"
 
 if ! docker ps --filter name=we-mp-rss --format '{{.ID}}' | grep -q .; then
   if docker ps -a --filter name=we-mp-rss --format '{{.ID}}' | grep -q .; then
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 启动 we-mp-rss 容器..." >> "$LOG_FILE"
-    docker start we-mp-rss >> "$LOG_FILE" 2>&1
+    log "启动 we-mp-rss..."
+    docker start we-mp-rss >> "$DETAIL_LOG" 2>&1
   else
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ⚠️ we-mp-rss 容器不存在" >> "$LOG_FILE"
+    log "创建 we-mp-rss..."
+    docker run -d --name we-mp-rss -p 8001:8001 \
+      -e WE_RSS.AUTH=True -e DEBUG=True \
+      -v /Users/bob.li/Code/ZJU-Sports-Hub/.we-mp-rss-data:/app/data \
+      ghcr.io/rachelos/we-mp-rss:latest >> "$DETAIL_LOG" 2>&1
   fi
 fi
 
-# Wait for we-mp-rss to boot + auto-sync WeChat articles
-# we-mp-rss has ENABLE_JOB=True, so sync starts automatically on boot
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 等待 we-mp-rss 自动同步文章..." >> "$LOG_FILE"
-sleep 120
+for i in $(seq 1 60); do
+  curl -s -o /dev/null http://localhost:8001/api/v1/wx/sys/info 2>/dev/null && { log "  ✓ we-mp-rss 就绪"; break; }
+  sleep 2
+done
 
-# ── Step 1: Sync from RSS ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 拉取 RSS..." >> "$LOG_FILE"
-npm run sync-rss -- --parse >> "$LOG_FILE" 2>&1 || {
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] sync-rss 失败" >> "$LOG_FILE"
-}
+# ── Step 2: Fetch articles from WeChat ──
+log "抓取公众号文章..."
+FETCH_RESULT=$(docker exec we-mp-rss /app/env_x86_64/bin/python3 -c "
+from jobs.mps import fetch_all_article
+fetch_all_article()
+" 2>&1)
+echo "$FETCH_RESULT" >> "$DETAIL_LOG"
+NEW_COUNT=$(echo "$FETCH_RESULT" | grep -oP '共更新\K\d+' || echo "0")
+log "  ✓ 完成 (新文章: $NEW_COUNT)"
 
-# ── Step 2: Rebuild static site ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 构建静态站点..." >> "$LOG_FILE"
-npm run build >> "$LOG_FILE" 2>&1
+# ── Step 3: Sync RSS + LLM parse ──
+log "RSS 同步 & LLM 解析..."
+SYNC_OUTPUT=$(NO_PROXY=localhost,127.0.0.1 npm run sync-rss -- --parse 2>&1)
+echo "$SYNC_OUTPUT" >> "$DETAIL_LOG"
+EVENT_COUNT=$(echo "$SYNC_OUTPUT" | grep -oP '已保存 \K\d+' || echo "0")
+NEW_URLS=$(echo "$SYNC_OUTPUT" | grep "✅ 新增" | grep -oP '\d+' | head -1 || echo "0")
+log "  ✓ 新增 $NEW_URLS 篇文章，$EVENT_COUNT 条赛事"
 
-# ── Step 3: Push + Deploy ──
+# ── Step 4: Clean up ──
+log "清理..."
+# delete .txt files older than 7 days
+OLD_FILES=$(find /Users/bob.li/Code/ZJU-Sports-Hub/articles/ -name "*.txt" -mtime +7 -delete -print 2>/dev/null | wc -l)
+log "  ✓ 删除 $OLD_FILES 个过期文章文件"
+
+# ── Step 5: Build ──
+log "构建..."
+npm run build >> "$DETAIL_LOG" 2>&1
+log "  ✓ 构建完成"
+
+# ── Step 6: Git push + deploy (only if events changed) ──
 if git diff --quiet src/data/events.json; then
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 无新赛事，跳过部署" >> "$LOG_FILE"
+  log "部署: 无新赛事，跳过"
 else
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 有新赛事，推送 GitHub..." >> "$LOG_FILE"
-  git add src/data/events.json urls.txt web.md articles/
-  git commit -m "auto: sync events $(date '+%Y-%m-%d')" >> "$LOG_FILE" 2>&1
-  git push origin main >> "$LOG_FILE" 2>&1
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] GitHub 推送完成" >> "$LOG_FILE"
-
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] 部署 Cloudflare Pages..." >> "$LOG_FILE"
-  npx wrangler pages deploy out --project-name=zju-sports --branch=main >> "$LOG_FILE" 2>&1
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] Cloudflare 部署完成" >> "$LOG_FILE"
+  git add src/data/events.json urls.txt web.md articles/ 2>/dev/null || true
+  git add -u src/data/events.json urls.txt web.md articles/ 2>/dev/null || true
+  if ! git diff --cached --quiet; then
+    git commit -m "auto: sync events $(date '+%Y-%m-%d')" >> "$DETAIL_LOG" 2>&1
+    git push origin main >> "$DETAIL_LOG" 2>&1
+    log "  ✓ GitHub 推送完成"
+  fi
+  npx wrangler pages deploy out --project-name=zju-sports --branch=main >> "$DETAIL_LOG" 2>&1
+  log "  ✓ Cloudflare 部署完成"
 fi
 
-# ── Step 4: Shutdown ──
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 停止 we-mp-rss 容器..." >> "$LOG_FILE"
-docker stop we-mp-rss >> "$LOG_FILE" 2>&1 || true
+# ── Step 7: Weekly Docker cleanup (Sunday only) ──
+if [ "$(date +%u)" = "7" ]; then
+  log "Docker 磁盘清理..."
+  docker system prune -f --filter "until=168h" >> "$DETAIL_LOG" 2>&1
+  log "  ✓ 清理完成"
+fi
 
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] 同步完成" >> "$LOG_FILE"
+log "同步完成"
 
-# 自动打开日志
-open "$LOG_FILE" 2>/dev/null || true
+# ── Open log at bottom in VSCode ──
+code --goto "$LOG_FILE":$(wc -l < "$LOG_FILE" | tr -d ' ') 2>/dev/null || open "$LOG_FILE"
