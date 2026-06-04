@@ -1,18 +1,5 @@
 [
   {
-    "title": "2026年浙江大学“球势杯”排球赛",
-    "category": "ball",
-    "campus": "zijingang",
-    "event_date": "2026-05-29",
-    "deadline": "2026-05-08",
-    "location": "浙江大学紫金港校区灯光球场、风雨球场",
-    "summary": "球势杯排球赛由浙江大学学生排球社主办，旨在推动校园体育活动，丰富体育文化。比赛采用多种赛制，男女分队自由组队，参赛者需为本校全日制学生或教职工，报名截止5月8日。",
-    "is_official": false,
-    "id": "llm-1779190570131-0",
-    "original_url": "https://mp.weixin.qq.com/s/_dePnTpNKNVt3rTzESJ1mA",
-    "created_at": "2026-05-19T11:36:10.131Z"
-  },
-  {
     "title": "2026年浙江大学夏季杯乒乓球赛",
     "category": "ball",
     "campus": "zijingang",
@@ -24,19 +11,6 @@
     "id": "llm-1780369662155-0",
     "original_url": "https://mp.weixin.qq.com/s/f8ylDO-HgwZVbGGqdG3xyg",
     "created_at": "2026-06-02T03:07:42.155Z"
-  },
-  {
-    "title": "浙江大学2026年“三好杯”健身健美比赛",
-    "category": "other",
-    "campus": "zijingang",
-    "event_date": "2026-05-29",
-    "deadline": "2026-05-22",
-    "location": "亚运热身馆",
-    "summary": "浙江大学2026年“三好杯”健身健美比赛在亚运热身馆举办，设男子健体、健身比基尼、男子健美三个项目，执行中国健美协会2024版规则，来自43个学院的177名选手参赛。",
-    "is_official": true,
-    "id": "llm-1780369694646-0",
-    "original_url": "https://mp.weixin.qq.com/s/IBH-t2LfFkMS-TDcVwltaQ",
-    "created_at": "2026-06-02T03:08:14.646Z"
   },
   {
     "title": "2026~2027学年秋冬学期排球高级班报名启动",
@@ -76,5 +50,18 @@
     "id": "llm-1780452148075-0",
     "original_url": "https://mp.weixin.qq.com/s/EeyHlaUpxC54iXa8baRVRQ",
     "created_at": "2026-06-03T02:02:28.075Z"
+  },
+  {
+    "title": "明目功大学生健康工程公益课",
+    "category": "other",
+    "campus": "zijingang",
+    "event_date": "2026-06-06",
+    "deadline": "2026-05-30",
+    "location": "紫金港游泳馆武术房",
+    "summary": "浙江大学学生太极拳协会主办健身气功-明目功公益课，以中医理论为基础，通过6式动作调节眼部功能，提升身心状态。由吴剑老师主讲，在紫金港游泳馆武术房进行。",
+    "is_official": false,
+    "id": "llm-1780537192091-0",
+    "original_url": "https://mp.weixin.qq.com/s/uSqHxH6we_eMBiSFrGrqlA",
+    "created_at": "2026-06-04T01:39:52.091Z"
   }
 ]
