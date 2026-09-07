@@ -85,7 +85,7 @@ git push                       # 触发 Cloudflare + Vercel 自动部署
 定时任务通过 macOS launchd 配置，每天 **9:30 AM** 运行：
 
 ```bash
-bash /Users/bob.li/Code/ZJU-Sports-Hub/scripts/auto-sync.sh
+bash ./auto-sync.sh
 ```
 
 **脚本流程**：
